@@ -1,0 +1,21 @@
+PHOTO LICENSING
+
+The photographs included in this project were downloaded from Pexels and were marked “Free to use” at the time of download.
+Pexels license: https://www.pexels.com/license/
+
+1. Hero / tree removal
+   Photographer: Henk Schuurmans
+   Source: https://www.pexels.com/photo/arborist-cutting-down-tree-trunk-safely-with-chainsaw-31127615/
+   Local derivatives: hero-bomenrooier.webp, og-bomenrooier.jpg
+
+2. Tree pruning
+   Photographer: Riku Keto
+   Source: https://www.pexels.com/photo/woman-in-helmet-climbing-tree-18355077/
+   Local derivative: snoeien-bomen.webp
+
+3. Tree stump
+   Photographer: Collab Media
+   Source: https://www.pexels.com/photo/close-up-shot-of-a-tree-stump-15209793/
+   Local derivative: boomstronk.webp
+
+The original downloaded JPG files may be removed after verifying the optimized derivatives. Attribution is not required by Pexels, but this file is retained to document the sources.
