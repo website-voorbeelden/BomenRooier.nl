@@ -1,0 +1,16 @@
+{
+  "name": "BomenRooier",
+  "short_name": "BomenRooier",
+  "description": "Vrijblijvende offerte voor bomen rooien, kappen en verwijderen.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f0f7ef",
+  "theme_color": "#124d32",
+  "icons": [
+    {
+      "src": "./assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

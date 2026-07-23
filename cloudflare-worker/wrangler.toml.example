@@ -1,0 +1,12 @@
+name = "bomenrooier-formulier"
+main = "src.js"
+compatibility_date = "2026-07-01"
+workers_dev = true
+
+[vars]
+FORM_RECIPIENT = "Tiesjipzakelijk@gmail.com"
+FORM_FROM = "BomenRooier aanvragen <aanvragen@tjworx.nl>"
+ALLOWED_ORIGINS = "https://bomenrooier.nl,https://www.bomenrooier.nl"
+
+# RESEND_API_KEY is een encrypted secret en hoort NIET in dit bestand.
+# Voeg deze toe met: npx wrangler secret put RESEND_API_KEY
