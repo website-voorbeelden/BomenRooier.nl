@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bomen snoeien: kosten, prijzen &amp; offerte | BomenRooier</title>
+  <meta name="description" content="Bomen laten snoeien? Bekijk indicatieve kosten voor kleine, middelgrote en grote bomen en vraag eenvoudig een vrijblijvende offerte aan.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bomenrooier.nl/bomen-snoeien/">
+  <meta name="theme-color" content="#124d32">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="BomenRooier">
+  <meta property="og:title" content="Bomen snoeien: kosten, prijzen &amp; offerte | BomenRooier">
+  <meta property="og:description" content="Bekijk indicatieve kosten voor het snoeien van kleine, middelgrote en grote bomen en vraag een vrijblijvende offerte aan.">
+  <meta property="og:url" content="https://bomenrooier.nl/bomen-snoeien/">
+  <meta property="og:image" content="https://bomenrooier.nl/assets/images/bomenrooier-open-graph.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BomenRooier voor het snoeien en onderhouden van bomen">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preload" href="../assets/images/boomverzorger-klimwerk.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <style>
+    .summary-strip { position: relative; z-index: 4; margin-top: -30px; }
+    .summary-strip__grid { display: grid; grid-template-columns: repeat(3, 1fr); border-radius: 17px; background: var(--white); box-shadow: var(--shadow-md); overflow: hidden; }
+    .summary-strip__item { min-height: 104px; padding: 22px 26px; display: flex; flex-direction: column; justify-content: center; }
+    .summary-strip__item + .summary-strip__item { border-left: 1px solid var(--line); }
+    .summary-strip__item strong { color: var(--green-950); font-size: 1.03rem; line-height: 1.3; }
+    .summary-strip__item span { margin-top: 3px; color: var(--ink-500); font-size: .88rem; }
+    .price-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .45fr); gap: 54px; align-items: start; }
+    .price-table-wrap { border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--white); box-shadow: var(--shadow-sm); overflow: hidden; }
+    .price-table { width: 100%; border-collapse: collapse; }
+    .price-table thead tr, .price-table tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(190px, .38fr); }
+    .price-table th, .price-table td { padding: 18px 21px; text-align: left; vertical-align: top; }
+    .price-table th { color: var(--white); background: var(--green-900); font-size: .83rem; letter-spacing: .04em; text-transform: uppercase; }
+    .price-table th:last-child, .price-table td:last-child { text-align: right; }
+    .price-table tbody tr + tr { border-top: 1px solid var(--line); }
+    .price-table tbody tr:nth-child(even) { background: var(--green-50); }
+    .price-table td:first-child { color: var(--ink-800); font-weight: 700; }
+    .price-table td:last-child { color: var(--green-900); font-weight: 900; white-space: nowrap; }
+    .price-note { margin: 18px 0 0; padding: 17px 19px; border-left: 4px solid var(--orange-600); border-radius: 0 10px 10px 0; color: var(--ink-650); background: var(--orange-100); font-size: .92rem; }
+    .price-side { padding: 28px; border-radius: var(--radius-md); color: var(--white); background: linear-gradient(145deg, var(--green-950), var(--green-700)); }
+    .price-side h3 { font-size: 1.45rem; }
+    .price-side p { color: #d3e4d8; }
+    .price-side .button { width: 100%; }
+    .content-list { margin: 25px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; list-style: none; }
+    .content-list li { position: relative; padding-left: 28px; color: var(--ink-650); }
+    .content-list li::before { content: ""; position: absolute; left: 0; top: .52em; width: 16px; height: 16px; border-radius: 50%; background: var(--green-100); }
+    .content-list li::after { content: ""; position: absolute; left: 5px; top: .74em; width: 6px; height: 3px; border-left: 2px solid var(--green-700); border-bottom: 2px solid var(--green-700); transform: rotate(-45deg); }
+    .example-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .example-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); }
+    .example-card span { display: block; margin-bottom: 22px; color: var(--green-600); font-size: .76rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+    .example-card h3 { font-size: 1.25rem; }
+    .example-card p { margin: 0; color: var(--ink-500); }
+    .compact-cta { margin-top: 32px; display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 25px 28px; border-radius: var(--radius-md); color: var(--white); background: var(--green-900); }
+    .compact-cta p { margin: 0; max-width: 650px; color: #d4e4d9; }
+    .compact-cta .button { flex: 0 0 auto; }
+    .included-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+    .included-grid article { padding: 20px 22px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-soft); }
+    .included-grid h3 { margin-bottom: 5px; font-size: 1.02rem; }
+    .included-grid p { margin: 0; color: var(--ink-500); font-size: .9rem; }
+    .photo-guide { margin: 26px 0 0; padding: 25px; border-radius: var(--radius-md); background: var(--green-50); }
+    .photo-guide h3 { margin-bottom: 14px; }
+    .photo-guide ul { margin: 0; padding-left: 20px; columns: 2; column-gap: 45px; color: var(--ink-650); }
+    .photo-guide li { break-inside: avoid; margin-bottom: 7px; }
+    .process-grid--services { grid-template-columns: repeat(3, 1fr); }
+    .process-grid--services li:nth-child(n+4) { border-top: 1px solid var(--line-dark); }
+    .process-grid--services li:nth-child(4) { border-left: 0; }
+    .process-grid--four { grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 900px) {
+      .summary-strip__grid, .price-layout, .example-grid, .process-grid--services, .process-grid--four { grid-template-columns: 1fr; }
+      .process-grid--services li:nth-child(n+4), .process-grid--services li:nth-child(4) { border-left: 0; }
+      .process-grid--services li + li { border-top: 1px solid var(--line-dark); }
+      .summary-strip__item + .summary-strip__item { border-left: 0; border-top: 1px solid var(--line); }
+      .price-side { margin-top: 0; }
+      .compact-cta { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 680px) {
+      .summary-strip { margin-top: -18px; }
+      .price-table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+      .price-table tbody { display: block; }
+      .price-table tbody tr { display: grid; grid-template-columns: 1fr; padding: 17px 18px; }
+      .price-table tbody tr + tr { border-top: 1px solid var(--line); }
+      .price-table td { padding: 0; }
+      .price-table td:last-child { margin-top: 6px; text-align: left; white-space: normal; }
+      .content-list, .included-grid { grid-template-columns: 1fr; }
+      .photo-guide ul { columns: 1; }
+    }
+  </style>
+
+  <!-- Google Tag Manager: plaats de officiële GTM <script>-code hier. -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bomenrooier.nl/#website",
+      "url": "https://bomenrooier.nl/",
+      "name": "BomenRooier",
+      "inLanguage": "nl-NL",
+      "publisher": {
+        "@id": "https://bomenrooier.nl/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bomenrooier.nl/#organization",
+      "name": "BomenRooier",
+      "url": "https://bomenrooier.nl/",
+      "logo": "https://bomenrooier.nl/assets/icons/logo-bomenrooier.svg",
+      "telephone": "+31612249916",
+      "email": "Tiesjipzakelijk@gmail.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+31612249916",
+        "contactType": "customer service",
+        "availableLanguage": "Dutch"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bomenrooier.nl/bomen-snoeien/#webpage",
+      "url": "https://bomenrooier.nl/bomen-snoeien/",
+      "name": "Bomen snoeien: kosten, prijzen & offerte | BomenRooier",
+      "description": "Bomen laten snoeien? Bekijk indicatieve kosten voor kleine, middelgrote en grote bomen en vraag eenvoudig een vrijblijvende offerte aan.",
+      "isPartOf": {
+        "@id": "https://bomenrooier.nl/#website"
+      },
+      "about": {
+        "@id": "https://bomenrooier.nl/bomen-snoeien/#service"
+      },
+      "breadcrumb": {
+        "@id": "https://bomenrooier.nl/bomen-snoeien/#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://bomenrooier.nl/bomen-snoeien/#primaryimage"
+      },
+      "inLanguage": "nl-NL"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://bomenrooier.nl/bomen-snoeien/#primaryimage",
+      "url": "https://bomenrooier.nl/assets/images/boomverzorger-klimwerk.webp",
+      "contentUrl": "https://bomenrooier.nl/assets/images/boomverzorger-klimwerk.webp",
+      "width": 986,
+      "height": 1200,
+      "caption": "Boomverzorger die op hoogte snoeiwerk uitvoert"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bomenrooier.nl/bomen-snoeien/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bomenrooier.nl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bomen snoeien",
+          "item": "https://bomenrooier.nl/bomen-snoeien/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bomenrooier.nl/bomen-snoeien/#service",
+      "name": "Bomen snoeien",
+      "serviceType": "Bomen en grote bomen laten snoeien",
+      "url": "https://bomenrooier.nl/bomen-snoeien/",
+      "description": "Offerte aanvragen voor onderhoudssnoei, dood hout verwijderen, kroon uitdunnen, kroon verkleinen, opkronen en het verwijderen van gevaarlijke of overhangende takken.",
+      "provider": {
+        "@id": "https://bomenrooier.nl/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://bomenrooier.nl/bomen-snoeien/#offerte",
+        "description": "Vrijblijvende offerte op basis van de boom en bereikbaarheid"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bomenrooier.nl/bomen-snoeien/#faq-schema",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wat kost het snoeien van één boom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voor het snoeien van één boom wordt vaak gerekend met ongeveer €150 tot €500, afhankelijk van de grootte, hoeveelheid snoeiwerk en bereikbaarheid. Een kleine boom in een open voortuin valt meestal lager uit dan een middelgrote boom in een achtertuin. Voor een betrouwbare prijs zijn foto’s van de volledige boom, de stam, de kroon en de toegang tot de tuin nodig."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat kost het snoeien van een grote boom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voor een grote of moeilijk bereikbare boom ligt een indicatieve marktprijs vaak tussen €500 en €1.500 of hoger. De uiteindelijke prijs hangt onder meer af van de kroon, zware takken, obstakels, inzet van een klimmer of hoogwerker en de afvoer van snoeiafval. Grote bomen worden daarom altijd op basis van de werkelijke situatie beoordeeld."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ik een prijs krijgen op basis van foto’s?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Duidelijke foto’s maken een eerste beoordeling veel gerichter. Fotografeer de volledige boom, de stamvoet, de kroon, de afstand tot woning en schutting en de route vanaf de straat. Vermeld ook welke takken overlast geven en of het snoeihout moet worden afgevoerd. Soms is daarna nog aanvullende informatie of beoordeling op locatie nodig."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wanneer kan een boom het beste worden gesnoeid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dat verschilt per boomsoort, leeftijd, conditie en snoeidoel. Sommige bomen kunnen in meerdere perioden worden gesnoeid, terwijl andere soorten gevoelig zijn voor snoei tijdens een sterke sapstroom of rond de bloei. Ook het weer en de omvang van de ingreep tellen mee. Afgebroken of direct gevaarlijke takken kunnen eerder beoordeling nodig hebben."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Worden de takken en het snoeiafval afgevoerd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dat kan onderdeel van de offerte zijn, maar is niet automatisch bij iedere prijs inbegrepen. Spreek vooraf af of takken worden versnipperd, afgevoerd of op locatie blijven en of bruikbaar stamhout apart wordt gelegd. De hoeveelheid materiaal en de afstand tot de laadplek kunnen invloed hebben op de totale kosten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is een hoogwerker altijd nodig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Een hoogwerker is niet voor iedere boom noodzakelijk. Afhankelijk van de boom, standplaats en bereikbaarheid kan vanaf de grond, met klimtechnieken of met een hoogwerker worden gewerkt. Een hoogwerker vraagt een geschikte opstelplek en voldoende toegang. Welke methode passend is, wordt vooraf op basis van de situatie bepaald."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan een boom beter worden gesnoeid of gekapt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Snoeien past wanneer de boom behouden kan blijven en gerichte verwijdering van takken voldoende is. Kappen kan worden overwogen wanneer de boom volledig weg moet, ernstig beschadigd is of niet veilig behouden kan blijven. De conditie, boomsoort, omgeving en gewenste uitkomst bepalen welke aanpak logisch is."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript): plaats de officiële iframe-code direct na <body>. -->
+  <a class="skip-link" href="#main-content">Ga naar de inhoud</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-top">
+      <div class="container header-top__inner">
+        <p>Vrijblijvende offerte · Snel contact via WhatsApp of telefoon</p>
+        <div class="header-top__links">
+          <a id="header-phone-link" class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="header" data-service="bomen-snoeien" aria-label="Bel BomenRooier op 06 12 24 99 16">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg>
+            06 12 24 99 16
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container nav-wrap">
+      <a class="brand" href="../" aria-label="BomenRooier homepage">
+        <img src="../assets/icons/logo-bomenrooier.svg" width="210" height="52" alt="BomenRooier">
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Hoofdnavigatie">
+        <a href="../#bomen-rooien">Bomen rooien</a>
+        <a href="../boom-kappen/" data-action="internal_link_click" data-location="header" data-service="boom-kappen">Boom kappen</a>
+        <a href="./" aria-current="page">Bomen snoeien</a>
+        <a href="../boom-kappen-kosten/" data-action="internal_link_click" data-location="header" data-service="boom-kappen-kosten">Kosten</a>
+        <a href="#faq">Veelgestelde vragen</a>
+        <a id="nav-offer-link" class="button button--small button--primary" href="#offerte" data-action="internal_link_click" data-location="header" data-service="bomen-snoeien">Offerte aanvragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <nav aria-label="Broodkruimel">
+            <p class="eyebrow"><a href="../" data-action="internal_link_click" data-location="hero">Home</a> › Bomen snoeien</p>
+          </nav>
+          <h1 id="hero-title">Bomen snoeien: kosten en vrijblijvende offerte</h1>
+          <p class="hero__intro">Wilt u een kleine of grote boom laten snoeien? Via BomenRooier vraagt u eenvoudig een vrijblijvende offerte aan. De kosten hangen af van de grootte van de boom, de bereikbaarheid en de benodigde werkwijze. Stuur foto’s van de boom, kroon en omgeving, zodat de werkzaamheden gericht kunnen worden beoordeeld.</p>
+
+          <div class="hero__actions">
+            <a id="hero-offer" class="button button--primary" href="#offerte" data-action="internal_link_click" data-location="hero" data-service="bomen-snoeien">Vraag een vrijblijvende offerte aan</a>
+            <a id="hero-whatsapp" class="button button--whatsapp tracked-contact" href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20wil%20graag%20een%20offerte%20voor%20het%20snoeien%20van%20een%20boom.%20Ik%20stuur%20hierbij%20foto%27s." data-action="whatsapp_click" data-location="hero" data-service="bomen-snoeien" target="_blank" rel="noopener">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1C18.7 23.7 24 18.4 24 11.9c0-3.2-1.2-6.2-3.5-8.4Z"/></svg>
+              Stuur foto’s via WhatsApp
+            </a>
+            <a id="hero-phone" class="plain-phone tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="hero" data-service="bomen-snoeien">Bel direct: 06 12 24 99 16</a>
+          </div>
+          <p class="hero__microcopy">U ontvangt duidelijkheid over de aanpak en de prijs voor uw situatie.</p>
+        </div>
+
+        <div class="hero__visual">
+          <figure class="hero__image-wrap">
+            <img src="../assets/images/boomverzorger-klimwerk.webp" width="986" height="1200" alt="Boomverzorger die op hoogte een grote boom snoeit" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-card" aria-label="Offerte op basis van foto’s">
+            <span class="hero-card__number">01</span>
+            <div><strong>Laat de hele boom zien</strong><span>Foto’s van kroon, stam en toegang helpen bij de beoordeling.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="summary-strip" aria-label="Samenvatting bomen snoeien">
+      <div class="container summary-strip__grid">
+        <div class="summary-strip__item"><strong>Indicatief vanaf €150</strong><span>De werkelijke prijs hangt af van uw boom en locatie.</span></div>
+        <div class="summary-strip__item"><strong>Kleine én grote bomen</strong><span>Ook snoeiwerk op hoogte kan worden beoordeeld.</span></div>
+        <div class="summary-strip__item"><strong>Prijs op basis van de situatie</strong><span>Stuur duidelijke foto’s voor een gerichte inschatting.</span></div>
+      </div>
+    </div>
+
+    <section class="section section--tint" id="kosten" aria-labelledby="kosten-title">
+      <div class="container">
+        <p class="eyebrow">Indicatieve prijzen</p>
+        <h2 id="kosten-title">Wat kost een boom laten snoeien?</h2>
+        <div class="price-layout">
+          <div>
+            <p>De kosten voor een boom snoeien verschillen sterk per situatie. Een kleine, vrijstaande boom vraagt minder tijd en materieel dan een grote boom boven een woning of schutting. Ook de bereikbaarheid, hoeveelheid takken, snoeimethode en afvoer van het snoeiafval tellen mee. Onderstaande bedragen zijn daarom uitsluitend indicatieve marktprijzen.</p>
+
+            <div class="price-table-wrap">
+              <table class="price-table" aria-describedby="price-disclaimer">
+                <thead>
+                  <tr><th scope="col">Werkzaamheid</th><th scope="col">Indicatieve kosten</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Kleine, goed bereikbare boom snoeien</td><td>€150 – €300</td></tr>
+                  <tr><td>Middelgrote boom snoeien</td><td>€300 – €500</td></tr>
+                  <tr><td>Grote of moeilijk bereikbare boom snoeien</td><td>€500 – €1.500+</td></tr>
+                  <tr><td>Meerdere bomen snoeien</td><td>Prijs op maat</td></tr>
+                  <tr><td>Snoeiafval afvoeren</td><td>Afhankelijk van hoeveelheid</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="price-note" id="price-disclaimer"><strong>Let op:</strong> de genoemde bedragen zijn uitsluitend indicatieve marktprijzen. De werkelijke prijs hangt af van de boom, locatie, bereikbaarheid, benodigde materialen en gewenste oplevering. Vraag daarom altijd een offerte op maat aan.</p>
+          </div>
+
+          <aside class="price-side" aria-label="Prijs voor uw boom aanvragen">
+            <p class="eyebrow">Geen standaardtarief</p>
+            <h3>Ontvang een prijs voor uw boom</h3>
+            <p>Stuur foto’s van de volledige boom, kroon, stam en toegang tot de tuin. Daarmee kan de omvang van het werk beter worden ingeschat.</p>
+            <a id="costs-offer" class="button button--light" href="#offerte" data-action="internal_link_click" data-location="costs" data-service="bomen-snoeien">Ontvang een prijs voor uw boom</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="factoren-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Prijsopbouw</p>
+            <h2 id="factoren-title">Waarvan hangen de kosten van bomen snoeien af?</h2>
+          </div>
+          <p>De prijs wordt vooral bepaald door de benodigde tijd, bereikbaarheid, gekozen snoeimethode en verwerking van het vrijkomende materiaal.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="service-card">
+            <div class="service-card__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M24 42V19M15 29l9-10 9 10M12 20 24 6l12 14"/></svg></div>
+            <h3>Hoogte en omvang van de boom</h3>
+            <p>Een hogere, bredere of zwaar vertakte boom vraagt meestal meer werk. Ook de dikte en positie van de te verwijderen takken spelen mee.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M6 40h36M11 40V18h26v22M18 40V28h12v12M8 18l16-11 16 11"/></svg></div>
+            <h3>Bereikbaarheid van de tuin</h3>
+            <p>Een boom naast de straat is vaak eenvoudiger bereikbaar dan een boom achter een woning met een smalle poort of gesloten doorgang.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M8 40h32M15 40V20l17-8 4 8H15Zm7-4V25m7 11V22"/></svg></div>
+            <h3>Snoeien met klimmer of hoogwerker</h3>
+            <p>Bij snoeien op hoogte kan een klimmer of hoogwerker nodig zijn. De inzet en bereikbaarheid van dit materieel beïnvloeden de prijs.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M9 37c9-1 13-7 15-16 2 9 6 15 15 16M24 42V11M17 17l7-7 7 7"/></svg></div>
+            <h3>Hoeveelheid snoeiwerk</h3>
+            <p>Enkele gevaarlijke takken verwijderen is iets anders dan een volledige onderhoudsbeurt of het gericht verkleinen van een grote kroon.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M24 6v30M18 30l6 6 6-6M9 12h30M12 12v8M36 12v8"/></svg></div>
+            <h3>Takken gecontroleerd laten zakken</h3>
+            <p>Bij woningen, serres en schuttingen moeten takken soms met touwen worden neergelaten. Dat vraagt extra handelingen en werkruimte.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M8 36h24l7-9H17L8 36Zm6 0-2 6m17-6 2 6M21 27l-6-12m8 12 5-16"/></svg></div>
+            <h3>Afvoeren van snoeiafval</h3>
+            <p>Versnipperen, afvoeren of achterlaten van takken maakt verschil. De hoeveelheid en afstand tot de laadplek tellen mee.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M14 40V20m20 20V14M8 20h12M28 14h12M9 20 14 8l5 12m10-6 5-8 5 8"/></svg></div>
+            <h3>Eén boom of meerdere bomen</h3>
+            <p>Meerdere bomen tijdens één bezoek kunnen efficiënter worden ingepland. De totaalprijs blijft afhankelijk van het werk per boom.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="werkzaamheden-title">
+      <div class="container">
+        <div class="section-heading section-heading--light">
+          <div>
+            <p class="eyebrow">Mogelijke snoeiwerkzaamheden</p>
+            <h2 id="werkzaamheden-title">Welke snoeiwerkzaamheden zijn mogelijk?</h2>
+          </div>
+          <p>De juiste aanpak hangt af van de boomsoort, leeftijd, conditie en omgeving. Niet iedere snoeimethode is geschikt voor iedere boom.</p>
+        </div>
+
+        <ol class="process-grid process-grid--services">
+          <li><span class="process-grid__number">01</span><h3>Onderhoudssnoei</h3><p>Ongewenste, kruisende, beschadigde of slecht ontwikkelde takken gericht verwijderen.</p></li>
+          <li><span class="process-grid__number">02</span><h3>Dood hout verwijderen</h3><p>Afgestorven takken uit de kroon halen wanneer deze overlast of een risico kunnen vormen.</p></li>
+          <li><span class="process-grid__number">03</span><h3>Boomkroon uitdunnen</h3><p>Selectief takken verwijderen om de kroon luchtiger te maken zonder de natuurlijke vorm onnodig aan te tasten.</p></li>
+          <li><span class="process-grid__number">04</span><h3>Boomkroon verkleinen</h3><p>De kroon gericht innemen wanneer takken te dicht bij gebouwen, tuinen of andere objecten komen.</p></li>
+          <li><span class="process-grid__number">05</span><h3>Boom opkronen</h3><p>Lagere takken verwijderen om meer vrije ruimte onder de boom te creëren, wanneer de boom dit toelaat.</p></li>
+          <li><span class="process-grid__number">06</span><h3>Overhangende of gevaarlijke takken</h3><p>Gerichte takverwijdering bij schadegevaar, hinder of takken boven daken, paden en erfgrenzen.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="voorbeelden-title">
+      <div class="container">
+        <p class="eyebrow">Drie situaties</p>
+        <h2 id="voorbeelden-title">Kostenvoorbeelden voor het snoeien van een boom</h2>
+        <p>De onderstaande voorbeelden zijn geen uitgevoerde projecten of vaste offertes. Ze laten zien waarom vergelijkbare bomen toch een andere prijs kunnen krijgen.</p>
+
+        <div class="example-grid">
+          <article class="example-card"><span>Voorbeeld 1</span><h3>Kleine boom in een open voortuin</h3><p>De takken zijn vanaf de grond of met eenvoudig materiaal bereikbaar en het snoeiafval blijft op locatie. Deze situatie valt meestal aan de onderkant van de prijsrange.</p></article>
+          <article class="example-card"><span>Voorbeeld 2</span><h3>Middelgrote boom in een achtertuin</h3><p>Meerdere zware takken worden verwijderd en het snoeiafval moet via een smalle doorgang worden afgevoerd. Door extra arbeid en afvoer valt de prijs doorgaans hoger uit.</p></article>
+          <article class="example-card"><span>Voorbeeld 3</span><h3>Grote boom dicht bij een woning</h3><p>Een klimmer of hoogwerker is nodig en takken moeten gecontroleerd langs een schutting worden neergelaten. Voor deze situatie is altijd een prijs op maat nodig.</p></article>
+        </div>
+
+        <div class="compact-cta">
+          <p><strong>Een bruikbare prijs begint met duidelijke foto’s.</strong><br>Laat de volledige boom, stam, kroon en toegang tot de tuin zien.</p>
+          <a id="examples-whatsapp" class="button button--whatsapp tracked-contact" href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20wil%20graag%20een%20gerichte%20prijsindicatie%20voor%20het%20snoeien%20van%20mijn%20boom.%20Ik%20stuur%20hierbij%20foto%27s." data-action="whatsapp_click" data-location="services" data-service="bomen-snoeien" target="_blank" rel="noopener">Stuur foto’s voor een gerichte prijsindicatie</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="wanneer-title">
+      <div class="container split">
+        <div class="split__content">
+          <p class="eyebrow">Redenen voor snoeiwerk</p>
+          <h2 id="wanneer-title">Wanneer is het verstandig om een boom te snoeien?</h2>
+          <p>Snoeien kan passend zijn wanneer takken beschadigd, afgestorven of ongewenst zijn, maar ook om de kroon beter te laten aansluiten op de beschikbare ruimte. De boom moet daarbij altijd als geheel worden bekeken. Te zwaar of verkeerd snoeien kan de vorm en conditie juist nadelig beïnvloeden.</p>
+          <ul class="content-list">
+            <li>Dode of beschadigde takken</li>
+            <li>Overhangende takken</li>
+            <li>Takken dicht bij daken of gevels</li>
+            <li>Een erg dichte kroon</li>
+            <li>Achterstallig onderhoud</li>
+            <li>Schade na storm of harde wind</li>
+            <li>Behoud van een veilige kroonstructuur</li>
+            <li>Meer bruikbare ruimte in de tuin</li>
+          </ul>
+        </div>
+        <aside class="quote-panel">
+          <div class="quote-panel__icon"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M24 43V17M13 27l11-10 11 10M8 19 24 4l16 15"/></svg></div>
+          <h3>Niet iedere boom hoeft kleiner</h3>
+          <p>Soms is het verwijderen van dood hout of één probleemtak voldoende. De gewenste uitkomst en wat verantwoord is voor de boom worden samen beoordeeld.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="snoeiperiode-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Het juiste moment</p>
+            <h2 id="snoeiperiode-title">Wanneer kan een boom het beste worden gesnoeid?</h2>
+          </div>
+          <p>Er bestaat geen universele snoeimaand die voor alle soorten, leeftijden en snoeivormen geschikt is.</p>
+        </div>
+        <p>De beste snoeiperiode hangt af van de boomsoort, leeftijd, conditie en het doel van de ingreep. Ook de bloei- en groeiperiode, sapstroom, weersomstandigheden en omvang van het snoeiwerk spelen mee. Een kleine onderhoudsbeurt kan op een ander moment passend zijn dan een grotere kroonreductie.</p>
+        <p>Afgebroken of direct gevaarlijke takken vragen soms sneller om beoordeling. Dat betekent niet automatisch dat de hele kroon zwaar moet worden gesnoeid. Eerst wordt bekeken welke takken aandacht nodig hebben en welke aanpak bij de boom past.</p>
+      </div>
+    </section>
+
+    <section class="section media-section section--tint" aria-labelledby="veilig-title">
+      <div class="container media-section__grid">
+        <figure class="media-section__image">
+          <img src="../assets/images/boomverzorger-klimwerk.webp" width="986" height="1200" loading="lazy" decoding="async" alt="Boomverzorger met klimuitrusting tijdens het snoeien op hoogte">
+          <figcaption>De werkmethode wordt afgestemd op de boom, beschikbare ruimte en bereikbaarheid.</figcaption>
+        </figure>
+        <div class="media-section__content">
+          <p class="eyebrow">Werken op hoogte</p>
+          <h2 id="veilig-title">Hoe wordt een grote boom veilig gesnoeid?</h2>
+          <p>Bij een grote boom moet eerst worden bepaald hoe de kroon bereikbaar is en waar takken veilig kunnen worden verwerkt. Een boom aan de straat vraagt een andere aanpak dan een boom achter een woning of boven een kwetsbare tuin.</p>
+          <div class="definition-grid">
+            <article><h3>Snoeien met klimtechnieken</h3><p>Een klimmer kan zich door de kroon verplaatsen wanneer de boom en situatie daarvoor geschikt zijn.</p></article>
+            <article><h3>Snoeien met een hoogwerker</h3><p>Een hoogwerker kan passend zijn als er een bereikbare en stabiele opstelplek beschikbaar is.</p></article>
+            <article><h3>Takken met touwen laten zakken</h3><p>Bij obstakels worden takken soms gecontroleerd neergelaten in plaats van vrij naar beneden gelaten.</p></article>
+            <article><h3>Werkgebied veilig afzetten</h3><p>De ruimte onder en rond de boom moet tijdens de werkzaamheden vrij en overzichtelijk blijven.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="inbegrepen-title">
+      <div class="container split">
+        <div class="split__content">
+          <p class="eyebrow">Duidelijke afspraken</p>
+          <h2 id="inbegrepen-title">Wat is bij de prijs inbegrepen?</h2>
+          <p>Niet iedere offerte bevat automatisch dezelfde onderdelen. Controleer daarom niet alleen het eindbedrag, maar ook welke werkzaamheden, materialen en afvoer zijn opgenomen. Een duidelijke offerte voorkomt verschil in verwachtingen tijdens en na het snoeien.</p>
+          <div class="included-grid">
+            <article><h3>Welke bomen en takken</h3><p>Welke boom of bomen worden gesnoeid en welke delen worden aangepakt?</p></article>
+            <article><h3>Gekozen snoeimethode</h3><p>Gaat het om onderhoud, uitdunnen, verkleinen of een gerichte takverwijdering?</p></article>
+            <article><h3>Klimmer of hoogwerker</h3><p>Staat de inzet van speciaal materieel of werken op hoogte in de offerte?</p></article>
+            <article><h3>Versnipperen en afvoer</h3><p>Worden takken verwerkt, afgevoerd of op een afgesproken plek achtergelaten?</p></article>
+            <article><h3>Oplevering van de werkplek</h3><p>Welke werkzaamheden worden na het snoeien uitgevoerd om de plek op te leveren?</p></article>
+            <article><h3>Btw en voorrijkosten</h3><p>Controleer of btw en eventuele voorrijkosten in het genoemde bedrag zijn verwerkt.</p></article>
+          </div>
+        </div>
+        <aside class="cost-card">
+          <div class="cost-card__top"><span class="cost-card__label">Controleer de offerte</span><h3>Vergelijk de inhoud, niet alleen de prijs</h3></div>
+          <ol>
+            <li><span>1</span>De exacte snoeiwerkzaamheden</li>
+            <li><span>2</span>Benodigd materieel en bereikbaarheid</li>
+            <li><span>3</span>Afvoer of achterlaten van snoeihout</li>
+            <li><span>4</span>De afgesproken oplevering</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="snoeien-kappen-title">
+      <div class="container">
+        <p class="eyebrow">Boom behouden of verwijderen</p>
+        <h2 id="snoeien-kappen-title">Boom snoeien of laten kappen?</h2>
+        <p>Snoeien past wanneer de boom behouden kan blijven en gerichte verwijdering van takken voldoende is. Denk aan dood hout, overhangende takken of een kroon die zorgvuldig moet worden uitgedund of verkleind. Kappen kan worden overwogen wanneer een boom volledig verwijderd moet worden, ernstig beschadigd is of niet veilig behouden kan blijven.</p>
+        <p>Twijfelt u welke aanpak passend is? Laat de boom en omgeving eerst beoordelen. Lees ook meer over een <a class="text-link" href="../boom-kappen/" data-action="internal_link_click" data-location="services" data-service="boom-kappen">boom laten kappen <span>→</span></a>.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="aanvragen-title">
+      <div class="container">
+        <div class="section-heading section-heading--light">
+          <div>
+            <p class="eyebrow">Offerte voorbereiden</p>
+            <h2 id="aanvragen-title">Zo vraagt u een offerte voor bomen snoeien aan</h2>
+          </div>
+          <p>Met goede foto’s en een korte omschrijving kan de situatie sneller en nauwkeuriger worden beoordeeld.</p>
+        </div>
+        <ol class="process-grid process-grid--four">
+          <li><span class="process-grid__number">01</span><h3>Stuur de volledige boom</h3><p>Maak een foto waarop de vorm, hoogte en volledige kroon zichtbaar zijn.</p></li>
+          <li><span class="process-grid__number">02</span><h3>Toon stam en omgeving</h3><p>Laat de onderzijde, woning, schutting en andere obstakels zien.</p></li>
+          <li><span class="process-grid__number">03</span><h3>Geef uw wensen door</h3><p>Beschrijf welke takken problemen geven en wat met het snoeiafval moet gebeuren.</p></li>
+          <li><span class="process-grid__number">04</span><h3>Ontvang een beoordeling</h3><p>U krijgt duidelijkheid over de mogelijke aanpak en een vrijblijvende offerte.</p></li>
+        </ol>
+        <div class="photo-guide">
+          <h3>Deze foto’s helpen bij de beoordeling</h3>
+          <ul>
+            <li>De volledige boom</li>
+            <li>Stam en onderzijde</li>
+            <li>Kroon en probleem­takken</li>
+            <li>Afstand tot woning of schutting</li>
+            <li>Toegang vanaf straat naar tuin</li>
+            <li>Hoogwerkerroute en andere obstakels</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <p class="eyebrow">Veelgestelde vragen</p>
+          <h2 id="faq-title">Veelgestelde vragen over bomen snoeien en kosten</h2>
+          <p>Hier vindt u compacte antwoorden over prijzen, foto’s, snoeiperioden, afvoer en werken op hoogte.</p>
+          <a class="text-link" href="#offerte" data-action="internal_link_click" data-location="faq" data-service="bomen-snoeien">Uw situatie laten beoordelen <span>→</span></a>
+        </div>
+        <div class="accordion">
+          <details>
+            <summary><h3>Wat kost het snoeien van één boom?</h3></summary>
+            <div><p>Voor het snoeien van één boom wordt vaak gerekend met ongeveer €150 tot €500, afhankelijk van de grootte, hoeveelheid snoeiwerk en bereikbaarheid. Een kleine boom in een open voortuin valt meestal lager uit dan een middelgrote boom in een achtertuin. Voor een betrouwbare prijs zijn foto’s van de volledige boom, de stam, de kroon en de toegang tot de tuin nodig.</p></div>
+          </details>
+          <details>
+            <summary><h3>Wat kost het snoeien van een grote boom?</h3></summary>
+            <div><p>Voor een grote of moeilijk bereikbare boom ligt een indicatieve marktprijs vaak tussen €500 en €1.500 of hoger. De uiteindelijke prijs hangt onder meer af van de kroon, zware takken, obstakels, inzet van een klimmer of hoogwerker en de afvoer van snoeiafval. Grote bomen worden daarom altijd op basis van de werkelijke situatie beoordeeld.</p></div>
+          </details>
+          <details>
+            <summary><h3>Kan ik een prijs krijgen op basis van foto’s?</h3></summary>
+            <div><p>Ja. Duidelijke foto’s maken een eerste beoordeling veel gerichter. Fotografeer de volledige boom, de stamvoet, de kroon, de afstand tot woning en schutting en de route vanaf de straat. Vermeld ook welke takken overlast geven en of het snoeihout moet worden afgevoerd. Soms is daarna nog aanvullende informatie of beoordeling op locatie nodig.</p></div>
+          </details>
+          <details>
+            <summary><h3>Wanneer kan een boom het beste worden gesnoeid?</h3></summary>
+            <div><p>Dat verschilt per boomsoort, leeftijd, conditie en snoeidoel. Sommige bomen kunnen in meerdere perioden worden gesnoeid, terwijl andere soorten gevoelig zijn voor snoei tijdens een sterke sapstroom of rond de bloei. Ook het weer en de omvang van de ingreep tellen mee. Afgebroken of direct gevaarlijke takken kunnen eerder beoordeling nodig hebben.</p></div>
+          </details>
+          <details>
+            <summary><h3>Worden de takken en het snoeiafval afgevoerd?</h3></summary>
+            <div><p>Dat kan onderdeel van de offerte zijn, maar is niet automatisch bij iedere prijs inbegrepen. Spreek vooraf af of takken worden versnipperd, afgevoerd of op locatie blijven en of bruikbaar stamhout apart wordt gelegd. De hoeveelheid materiaal en de afstand tot de laadplek kunnen invloed hebben op de totale kosten.</p></div>
+          </details>
+          <details>
+            <summary><h3>Is een hoogwerker altijd nodig?</h3></summary>
+            <div><p>Nee. Een hoogwerker is niet voor iedere boom noodzakelijk. Afhankelijk van de boom, standplaats en bereikbaarheid kan vanaf de grond, met klimtechnieken of met een hoogwerker worden gewerkt. Een hoogwerker vraagt een geschikte opstelplek en voldoende toegang. Welke methode passend is, wordt vooraf op basis van de situatie bepaald.</p></div>
+          </details>
+          <details>
+            <summary><h3>Kan een boom beter worden gesnoeid of gekapt?</h3></summary>
+            <div><p>Snoeien past wanneer de boom behouden kan blijven en gerichte verwijdering van takken voldoende is. Kappen kan worden overwogen wanneer de boom volledig weg moet, ernstig beschadigd is of niet veilig behouden kan blijven. De conditie, boomsoort, omgeving en gewenste uitkomst bepalen welke aanpak logisch is.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offer-section" id="offerte" aria-labelledby="offerte-title">
+      <div class="container offer-grid">
+        <div class="offer-copy">
+          <p class="eyebrow">Offerte voor bomen snoeien</p>
+          <h2 id="offerte-title">Vraag een vrijblijvende offerte aan voor bomen snoeien</h2>
+          <p>Vertel welke boom u wilt laten snoeien en welke takken aandacht nodig hebben. Voeg maximaal drie foto’s toe van de volledige boom, stam, kroon en bereikbaarheid. De definitieve prijs hangt af van de werkelijke situatie en gewenste oplevering.</p>
+
+          <ul class="contact-options">
+            <li>
+              <a class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="footer" data-service="bomen-snoeien">
+                <span class="contact-options__icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg></span>
+                <span><small>Bel BomenRooier</small><strong>06 12 24 99 16</strong></span>
+              </a>
+            </li>
+            <li>
+              <a class="tracked-contact" href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20wil%20graag%20een%20offerte%20voor%20het%20snoeien%20van%20een%20boom.%20Ik%20stuur%20hierbij%20foto%27s." data-action="whatsapp_click" data-location="footer" data-service="bomen-snoeien" target="_blank" rel="noopener">
+                <span class="contact-options__icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1C18.7 23.7 24 18.4 24 11.9c0-3.2-1.2-6.2-3.5-8.4Z"/></svg></span>
+                <span><small>Stuur foto’s via WhatsApp</small><strong>Direct een bericht sturen</strong></span>
+              </a>
+            </li>
+            <li>
+              <a class="tracked-contact" href="mailto:Tiesjipzakelijk@gmail.com" data-action="email_click" data-location="footer" data-service="bomen-snoeien">
+                <span class="contact-options__icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm0 1 9 7 9-7"/></svg></span>
+                <span><small>Per e-mail aanvragen</small><strong>Tiesjipzakelijk@gmail.com</strong></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="offer-form" id="quote-form" method="post" enctype="multipart/form-data" data-endpoint="https://form.bomenrooier.nl/offerte" novalidate>
+          <div class="form-heading">
+            <h3>Vraag een prijs op maat aan</h3>
+            <p>Velden met een * zijn verplicht.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Naam *</label>
+              <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Telefoonnummer *</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="30">
+              <span class="field-error" id="phone-error"></span>
+            </div>
+            <div class="field">
+              <label for="email">E-mailadres *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="160">
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="field field--split">
+              <div>
+                <label for="postal-code">Postcode *</label>
+                <input id="postal-code" name="postal_code" type="text" autocomplete="postal-code" required maxlength="12">
+                <span class="field-error" id="postal-code-error"></span>
+              </div>
+              <div>
+                <label for="city">Plaats *</label>
+                <input id="city" name="city" type="text" autocomplete="address-level2" required maxlength="100">
+                <span class="field-error" id="city-error"></span>
+              </div>
+            </div>
+            <div class="field field--full">
+              <label for="service">Gewenste dienst *</label>
+              <select id="service" name="service" required>
+                <option value="">Kies een dienst</option>
+                <option value="Bomen rooien">Bomen rooien</option>
+                <option value="Boom kappen">Boom kappen</option>
+                <option value="Boom verwijderen">Boom verwijderen</option>
+                <option value="Bomen snoeien" selected>Bomen snoeien</option>
+                <option value="Boomstronk verwijderen">Boomstronk verwijderen</option>
+                <option value="Boomwortels verwijderen">Boomwortels verwijderen</option>
+                <option value="Stormschade of gevaarlijke boom">Stormschade of gevaarlijke boom</option>
+                <option value="Advies kapvergunning">Advies over kapvergunning</option>
+                <option value="Anders">Anders</option>
+              </select>
+              <span class="field-error" id="service-error"></span>
+            </div>
+            <div class="field field--full">
+              <label for="message">Korte omschrijving *</label>
+              <textarea id="message" name="message" rows="5" required maxlength="1500" placeholder="Bijvoorbeeld: één middelgrote boom achter in de tuin. Enkele zware takken hangen boven de schutting. Toegang via een poort van ongeveer 90 cm; snoeiafval graag afvoeren."></textarea>
+              <div class="field-meta"><span class="field-error" id="message-error"></span><span id="message-count">0 / 1500</span></div>
+            </div>
+            <div class="field field--full upload-field">
+              <label for="photos">Foto’s toevoegen <span>(maximaal 3)</span></label>
+              <div class="upload-box" id="upload-box">
+                <input id="photos" name="photos" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple>
+                <svg aria-hidden="true" viewBox="0 0 48 48"><path d="M8 12h9l3-4h8l3 4h9v28H8V12Z"/><circle cx="24" cy="26" r="8"/></svg>
+                <strong>Kies foto’s van de boom en omgeving</strong>
+                <span>JPG, PNG, WebP of HEIC · max. 4 MB per foto</span>
+              </div>
+              <ul class="file-list" id="file-list" aria-live="polite"></ul>
+              <span class="field-error" id="photos-error"></span>
+            </div>
+            <div class="field field--full checkbox-field">
+              <input id="consent" name="consent" type="checkbox" value="ja" required>
+              <label for="consent">Ik geef toestemming om contact met mij op te nemen over deze aanvraag. *</label>
+              <span class="field-error" id="consent-error"></span>
+            </div>
+          </div>
+
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="form_loaded_at" id="form-loaded-at">
+          <input type="hidden" name="page_url" id="page-url">
+          <input type="hidden" name="utm_source">
+          <input type="hidden" name="utm_medium">
+          <input type="hidden" name="utm_campaign">
+          <input type="hidden" name="utm_term">
+          <input type="hidden" name="utm_content">
+          <input type="hidden" name="gclid">
+          <input type="hidden" name="gbraid">
+          <input type="hidden" name="wbraid">
+          <input type="hidden" name="msclkid">
+
+          <button id="quote-submit" class="button button--primary button--full" type="submit" data-action="form_submit" data-location="footer" data-service="bomen-snoeien">
+            <span class="button__label">Vraag een vrijblijvende offerte aan</span>
+            <span class="button__loading" aria-hidden="true">Aanvraag versturen…</span>
+          </button>
+          <p class="form-note">Uw gegevens worden alleen gebruikt om op uw aanvraag te reageren.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+          <noscript><p class="noscript-note">JavaScript is nodig om dit formulier te versturen. Bel 06 12 24 99 16 of mail naar Tiesjipzakelijk@gmail.com.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../" aria-label="BomenRooier homepage"><img src="../assets/icons/logo-bomenrooier-light.svg" width="210" height="52" alt="BomenRooier"></a>
+        <p>Uw centrale aanspreekpunt voor het rooien, kappen, snoeien en verwijderen van bomen.</p>
+      </div>
+      <div>
+        <h2>Diensten</h2>
+        <ul>
+          <li><a href="../boom-kappen/" data-action="internal_link_click" data-location="footer" data-service="boom-kappen">Boom kappen</a></li>
+          <li><a href="./" aria-current="page">Bomen snoeien</a></li>
+          <li><a href="../boomstronk-verwijderen/" data-action="internal_link_click" data-location="footer" data-service="boomstronk-verwijderen">Boomstronk verwijderen</a></li>
+          <li><a href="../boom-kappen-kosten/" data-action="internal_link_click" data-location="footer" data-service="kosten">Kosten boom kappen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Informatie</h2>
+        <ul>
+          <li><a href="../#bomen-rooien" data-action="internal_link_click" data-location="footer" data-service="bomen-rooien">Bomen rooien</a></li>
+          <li><a href="#aanvragen" data-action="internal_link_click" data-location="footer">Onze werkwijze</a></li>
+          <li><a href="#faq" data-action="internal_link_click" data-location="footer">Veelgestelde vragen</a></li>
+          <li><a href="#offerte" data-action="internal_link_click" data-location="footer">Offerte aanvragen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul class="footer-contact">
+          <li><a class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="footer" data-service="bomen-snoeien">06 12 24 99 16</a></li>
+          <li><a class="tracked-contact" href="https://wa.me/31612249916" data-action="whatsapp_click" data-location="footer" data-service="bomen-snoeien" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a class="tracked-contact" href="mailto:Tiesjipzakelijk@gmail.com" data-action="email_click" data-location="footer" data-service="bomen-snoeien">Tiesjipzakelijk@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> BomenRooier. Alle rechten voorbehouden.</p>
+      <nav aria-label="Juridische links">
+        <a href="../privacy/">Privacy</a>
+        <a href="../voorwaarden/">Voorwaarden</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Snel contact opnemen">
+    <a id="mobile-phone" class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="mobile_sticky" data-service="bomen-snoeien">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg>
+      Bellen
+    </a>
+    <a id="mobile-whatsapp" class="tracked-contact" href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20wil%20graag%20een%20offerte%20voor%20het%20snoeien%20van%20een%20boom." data-action="whatsapp_click" data-location="mobile_sticky" data-service="bomen-snoeien" target="_blank" rel="noopener">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1C18.7 23.7 24 18.4 24 11.9c0-3.2-1.2-6.2-3.5-8.4Z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
