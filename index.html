@@ -31,116 +31,178 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://bomenrooier.nl/#website",
-        "url": "https://bomenrooier.nl/",
-        "name": "BomenRooier",
-        "inLanguage": "nl-NL",
-        "publisher": {"@id": "https://bomenrooier.nl/#organization"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bomenrooier.nl/#website",
+      "url": "https://bomenrooier.nl/",
+      "name": "BomenRooier",
+      "inLanguage": "nl-NL",
+      "publisher": {
+        "@id": "https://bomenrooier.nl/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bomenrooier.nl/#webpage",
+      "url": "https://bomenrooier.nl/",
+      "name": "Bomenrooier nodig? Boom laten rooien | BomenRooier",
+      "description": "Vrijblijvende offerte voor het rooien, kappen of verwijderen van bomen.",
+      "isPartOf": {
+        "@id": "https://bomenrooier.nl/#website"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://bomenrooier.nl/#webpage",
-        "url": "https://bomenrooier.nl/",
-        "name": "Bomenrooier nodig? Boom laten rooien | BomenRooier",
-        "description": "Vrijblijvende offerte voor het rooien, kappen of verwijderen van bomen.",
-        "isPartOf": {"@id": "https://bomenrooier.nl/#website"},
-        "about": {"@id": "https://bomenrooier.nl/#service"},
-        "primaryImageOfPage": {"@id": "https://bomenrooier.nl/#primaryimage"},
-        "inLanguage": "nl-NL"
+      "about": {
+        "@id": "https://bomenrooier.nl/#service"
       },
-      {
-        "@type": "ImageObject",
-        "@id": "https://bomenrooier.nl/#primaryimage",
-        "url": "https://bomenrooier.nl/assets/images/bomenrooier-boom-rooien.webp",
-        "contentUrl": "https://bomenrooier.nl/assets/images/bomenrooier-boom-rooien.webp",
-        "width": 1600,
-        "height": 1067,
-        "caption": "Bomenrooier aan het werk bij het verwijderen van een boom"
+      "primaryImageOfPage": {
+        "@id": "https://bomenrooier.nl/#primaryimage"
       },
-      {
-        "@type": "Organization",
-        "@id": "https://bomenrooier.nl/#organization",
-        "name": "BomenRooier",
-        "url": "https://bomenrooier.nl/",
-        "logo": "https://bomenrooier.nl/assets/icons/logo-bomenrooier.svg",
+      "inLanguage": "nl-NL"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://bomenrooier.nl/#primaryimage",
+      "url": "https://bomenrooier.nl/assets/images/bomenrooier-boom-rooien.webp",
+      "contentUrl": "https://bomenrooier.nl/assets/images/bomenrooier-boom-rooien.webp",
+      "width": 1600,
+      "height": 1067,
+      "caption": "Bomenrooier aan het werk bij het verwijderen van een boom"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bomenrooier.nl/#organization",
+      "name": "BomenRooier",
+      "url": "https://bomenrooier.nl/",
+      "logo": "https://bomenrooier.nl/assets/icons/logo-bomenrooier.svg",
+      "telephone": "+31612249916",
+      "email": "Tiesjipzakelijk@gmail.com",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Nederland"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+31612249916",
-        "email": "Tiesjipzakelijk@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Rotterdam",
-          "addressCountry": "NL"
-        },
-        "areaServed": {"@type": "Country", "name": "Nederland"},
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+31612249916",
-          "contactType": "customer service",
-          "availableLanguage": "Dutch",
-          "areaServed": "NL"
-        }
+        "contactType": "customer service",
+        "availableLanguage": "Dutch",
+        "areaServed": "NL"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bomenrooier.nl/#service",
+      "name": "Bomen rooien en verwijderen",
+      "serviceType": "Bomen rooien, bomen kappen en bomen verwijderen",
+      "provider": {
+        "@id": "https://bomenrooier.nl/#organization"
       },
-      {
-        "@type": "Service",
-        "@id": "https://bomenrooier.nl/#service",
-        "name": "Bomen rooien en verwijderen",
-        "serviceType": "Bomen rooien, bomen kappen en bomen verwijderen",
-        "provider": {"@id": "https://bomenrooier.nl/#organization"},
-        "areaServed": {"@type": "Country", "name": "Nederland"},
-        "offers": {
-          "@type": "Offer",
-          "description": "Vrijblijvende offerte op maat",
-          "url": "https://bomenrooier.nl/#offerte"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Boomwerkzaamheden",
-          "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bomen rooien"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boom kappen"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bomen snoeien"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boomstronk verwijderen"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boomwortels verwijderen"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormschade aan bomen"}}
-          ]
-        }
+      "areaServed": {
+        "@type": "Country",
+        "name": "Nederland"
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://bomenrooier.nl/#faq",
-        "mainEntity": [
+      "offers": {
+        "@type": "Offer",
+        "description": "Vrijblijvende offerte op maat",
+        "url": "https://bomenrooier.nl/#offerte"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Boomwerkzaamheden",
+        "itemListElement": [
           {
-            "@type": "Question",
-            "name": "Wat is het verschil tussen een boom kappen en een boom rooien?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Bij kappen wordt de boom bovengronds verwijderd. Bij rooien wordt meestal de complete boom verwijderd en wordt ook gekeken naar de stronk en, waar nodig, de wortels. De precieze aanpak hangt af van de locatie en wat u na afloop met de grond wilt doen."}
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bomen rooien"
+            }
           },
           {
-            "@type": "Question",
-            "name": "Kan ik een offerte krijgen op basis van foto’s?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Ja. Stuur via WhatsApp enkele duidelijke foto’s van de boom, de stam, de omgeving en de bereikbaarheid. Vermeld ook uw plaats en wat u wilt laten uitvoeren. Daarmee kan vaak snel een eerste inschatting worden gemaakt."}
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Boom kappen"
+            }
           },
           {
-            "@type": "Question",
-            "name": "Wat kost een boom laten rooien?",
-            "acceptedAnswer": {"@type": "Answer", "text": "De prijs hangt onder meer af van de hoogte en dikte van de boom, de bereikbaarheid, de beschikbare werkruimte, de afvoer van hout en groen en het verwijderen van de stronk. Daarom ontvangt u een prijs op maat."}
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bomen snoeien"
+            }
           },
           {
-            "@type": "Question",
-            "name": "Is voor het rooien van een boom een vergunning nodig?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Dat verschilt per gemeente en soms per boom. Controleer daarom altijd de lokale regels voordat de werkzaamheden starten. Bij de aanvraag kunnen we meedenken over de praktische vervolgstappen."}
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Boomstronk verwijderen"
+            }
           },
           {
-            "@type": "Question",
-            "name": "Werkt BomenRooier alleen in Rotterdam?",
-            "acceptedAnswer": {"@type": "Answer", "text": "BomenRooier is gevestigd in Rotterdam, maar aanvragen uit heel Nederland zijn welkom. Op basis van de locatie en de werkzaamheden bekijken we wat de passende planning en uitvoering is."}
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Boomwortels verwijderen"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stormschade aan bomen"
+            }
           }
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bomenrooier.nl/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wat is het verschil tussen een boom kappen en een boom rooien?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bij kappen wordt de boom bovengronds verwijderd. Bij rooien wordt meestal de complete boom verwijderd en wordt ook gekeken naar de stronk en, waar nodig, de wortels. De precieze aanpak hangt af van de locatie en wat u na afloop met de grond wilt doen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ik een offerte krijgen op basis van foto’s?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Stuur via WhatsApp enkele duidelijke foto’s van de boom, de stam, de omgeving en de bereikbaarheid. Vermeld ook uw plaats en wat u wilt laten uitvoeren. Daarmee kan vaak snel een eerste inschatting worden gemaakt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat kost een boom laten rooien?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De prijs hangt onder meer af van de hoogte en dikte van de boom, de bereikbaarheid, de beschikbare werkruimte, de afvoer van hout en groen en het verwijderen van de stronk. Daarom ontvangt u een prijs op maat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is voor het rooien van een boom een vergunning nodig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dat verschilt per gemeente en soms per boom. Controleer daarom altijd de lokale regels voordat de werkzaamheden starten. Bij de aanvraag kunnen we meedenken over de praktische vervolgstappen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wordt de boomstronk na het rooien ook verwijderd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dat hangt af van de afgesproken werkzaamheden. De boom kan bovengronds worden verwijderd terwijl de stronk blijft staan, maar de stronk kan ook worden uitgegraven of gefreesd. Geef bij uw aanvraag aan hoe u de plek na afloop wilt gebruiken."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -150,7 +212,7 @@
   <header class="site-header" id="site-header">
     <div class="header-top">
       <div class="container header-top__inner">
-        <p>Gevestigd in Rotterdam · Aanvragen uit heel Nederland welkom</p>
+        <p>Vrijblijvende offerte · Snel contact via WhatsApp of telefoon</p>
         <div class="header-top__links">
           <a id="header-phone-link" class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="header" aria-label="Bel BomenRooier op 06 12 24 99 16">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg>
@@ -170,10 +232,10 @@
       </button>
 
       <nav class="primary-nav" id="primary-navigation" aria-label="Hoofdnavigatie">
-        <a href="#bomen-rooien">Bomen rooien</a>
-        <a href="#diensten">Diensten</a>
-        <a href="#werkwijze">Werkwijze</a>
-        <a href="#kosten">Kosten</a>
+        <a href="#bomen-rooien" aria-current="page">Bomen rooien</a>
+        <a href="./boom-kappen/" data-action="internal_link_click" data-location="header" data-service="boom-kappen">Boom kappen</a>
+        <a href="./bomen-snoeien/" data-action="internal_link_click" data-location="header" data-service="bomen-snoeien">Bomen snoeien</a>
+        <a href="./boom-kappen-kosten/" data-action="internal_link_click" data-location="header" data-service="boom-kappen-kosten">Kosten</a>
         <a href="#faq">Veelgestelde vragen</a>
         <a id="nav-offer-link" class="button button--small button--primary" href="#offerte" data-action="internal_link_click" data-location="header">Offerte aanvragen</a>
       </nav>
@@ -429,23 +491,6 @@
       </div>
     </section>
 
-    <section class="section location-section" aria-labelledby="location-title">
-      <div class="container location-section__grid">
-        <div>
-          <p class="eyebrow">Werkgebied</p>
-          <h2 id="location-title">Bomenrooier vanuit Rotterdam, aanvragen door heel Nederland</h2>
-          <p>BomenRooier is gevestigd in Rotterdam. Aanvragen voor bomen rooien, bomen kappen en boomstronken verwijderen zijn welkom uit heel Nederland. Bij de beoordeling kijken we naar de locatie, omvang en gewenste planning van de klus.</p>
-          <div class="location-links" aria-label="Toekomstige lokale pagina’s">
-            <a href="./boom-kappen-rotterdam/" data-action="internal_link_click" data-location="services" data-service="rotterdam">Boom kappen Rotterdam <span aria-hidden="true">→</span></a>
-            <a href="./boom-kappen-den-haag/" data-action="internal_link_click" data-location="services" data-service="den-haag">Boom kappen Den Haag <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-        <figure>
-          <img src="./assets/images/verzorgde-tuin-na-boomwerk.webp" width="720" height="900" alt="Groene en verzorgde buitenruimte met bomen na tuinwerkzaamheden" loading="lazy" decoding="async">
-        </figure>
-      </div>
-    </section>
-
     <section class="section section--faq" id="faq" aria-labelledby="faq-title">
       <div class="container faq-grid">
         <div class="faq-intro">
@@ -472,8 +517,8 @@
             <div><p>Dat verschilt per gemeente en soms per boom. Controleer daarom altijd de lokale regels voordat de werkzaamheden starten. Bij de aanvraag kunnen we meedenken over de praktische vervolgstappen.</p></div>
           </details>
           <details>
-            <summary>Werkt BomenRooier alleen in Rotterdam?</summary>
-            <div><p>BomenRooier is gevestigd in Rotterdam, maar aanvragen uit heel Nederland zijn welkom. Op basis van de locatie en de werkzaamheden bekijken we wat de passende planning en uitvoering is.</p></div>
+            <summary>Wordt de boomstronk na het rooien ook verwijderd?</summary>
+            <div><p>Dat hangt af van de afgesproken werkzaamheden. De boom kan bovengronds worden verwijderd terwijl de stronk blijft staan, maar de stronk kan ook worden uitgegraven of gefreesd. Geef bij uw aanvraag aan hoe u de plek na afloop wilt gebruiken.</p></div>
           </details>
         </div>
       </div>
@@ -613,7 +658,6 @@
       <div class="footer-brand">
         <a href="./" aria-label="BomenRooier homepage"><img src="./assets/icons/logo-bomenrooier-light.svg" width="210" height="52" alt="BomenRooier"></a>
         <p>Uw centrale aanspreekpunt voor het rooien, kappen en verwijderen van bomen.</p>
-        <p class="footer-location">Gevestigd in Rotterdam</p>
       </div>
       <div>
         <h2>Diensten</h2>
@@ -625,11 +669,12 @@
         </ul>
       </div>
       <div>
-        <h2>Werkgebied</h2>
+        <h2>Informatie</h2>
         <ul>
-          <li><a href="./boom-kappen-rotterdam/" data-action="internal_link_click" data-location="footer" data-service="rotterdam">Boom kappen Rotterdam</a></li>
-          <li><a href="./boom-kappen-den-haag/" data-action="internal_link_click" data-location="footer" data-service="den-haag">Boom kappen Den Haag</a></li>
-          <li><a href="#offerte" data-action="internal_link_click" data-location="footer">Landelijke aanvraag</a></li>
+          <li><a href="#bomen-rooien" data-action="internal_link_click" data-location="footer" data-service="bomen-rooien">Bomen rooien</a></li>
+          <li><a href="#werkwijze" data-action="internal_link_click" data-location="footer">Onze werkwijze</a></li>
+          <li><a href="#faq" data-action="internal_link_click" data-location="footer">Veelgestelde vragen</a></li>
+          <li><a href="#offerte" data-action="internal_link_click" data-location="footer">Offerte aanvragen</a></li>
         </ul>
       </div>
       <div>
