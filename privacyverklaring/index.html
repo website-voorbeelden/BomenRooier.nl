@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Privacyverklaring | BomenRooier</title>
+  <meta name="description" content="Lees hoe BomenRooier persoonsgegevens verwerkt bij offerteaanvragen, foto-uploads, telefonisch contact, WhatsApp en websitegebruik.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bomenrooier.nl/privacyverklaring/">
+  <meta name="theme-color" content="#124d32">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="BomenRooier">
+  <meta property="og:title" content="Privacyverklaring | BomenRooier">
+  <meta property="og:description" content="Hoe BomenRooier omgaat met gegevens uit offerteaanvragen, foto’s, contactmomenten en websitegebruik.">
+  <meta property="og:url" content="https://bomenrooier.nl/privacyverklaring/">
+  <meta property="og:image" content="https://bomenrooier.nl/assets/images/bomenrooier-open-graph.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BomenRooier privacyverklaring">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preload" href="../assets/images/verzorgde-tuin-na-boomwerk.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <style>
+    .privacy-meta { display:flex; flex-wrap:wrap; gap:10px 22px; margin:20px 0 0; color:var(--ink-500); font-size:.9rem; }
+    .privacy-meta span { display:inline-flex; align-items:center; gap:8px; }
+    .privacy-meta span::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--green-600); }
+    .privacy-hero-card { padding:26px; border:1px solid rgba(255,255,255,.2); border-radius:var(--radius-md); background:rgba(18,77,50,.92); color:var(--white); }
+    .privacy-hero-card strong { display:block; margin-bottom:7px; font-size:1.18rem; }
+    .privacy-hero-card p { margin:0; color:#d6e4da; }
+    .privacy-nav { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:28px; }
+    .privacy-nav a { min-height:105px; padding:19px; border:1px solid var(--line); border-radius:var(--radius-sm); background:var(--surface); color:var(--green-950); text-decoration:none; transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+    .privacy-nav a:hover,.privacy-nav a:focus-visible { transform:translateY(-2px); border-color:var(--green-700); box-shadow:var(--shadow-sm); }
+    .privacy-nav strong { display:block; margin-bottom:5px; }
+    .privacy-nav span { color:var(--ink-500); font-size:.88rem; }
+    .policy-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:28px; }
+    .policy-card { padding:26px; border:1px solid var(--line); border-radius:var(--radius-md); background:var(--surface); }
+    .policy-card h3 { font-size:1.08rem; }
+    .policy-card p { margin:0; color:var(--ink-500); }
+    .legal-list { margin:22px 0 0; padding:0; list-style:none; display:grid; gap:12px; }
+    .legal-list li { position:relative; padding-left:28px; color:var(--ink-650); }
+    .legal-list li::before { content:""; position:absolute; left:0; top:.45em; width:16px; height:16px; border-radius:50%; background:var(--green-100); }
+    .legal-list li::after { content:""; position:absolute; left:5px; top:.69em; width:6px; height:3px; border-left:2px solid var(--green-700); border-bottom:2px solid var(--green-700); transform:rotate(-45deg); }
+    .privacy-table-wrap { margin-top:28px; overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius-md); background:var(--surface); box-shadow:var(--shadow-sm); -webkit-overflow-scrolling:touch; }
+    .privacy-table { width:100%; min-width:820px; border-collapse:collapse; text-align:left; }
+    .privacy-table th { padding:17px 18px; color:var(--white); background:var(--green-900); font-size:.88rem; }
+    .privacy-table td { padding:17px 18px; border-top:1px solid var(--line); vertical-align:top; color:var(--ink-650); }
+    .privacy-table tbody tr:nth-child(even) { background:var(--surface-soft); }
+    .privacy-table td:first-child { color:var(--green-950); font-weight:850; white-space:nowrap; }
+    .privacy-alert { margin-top:26px; padding:25px 27px; border:1px solid #bdd1c4; border-left:5px solid var(--green-700); border-radius:var(--radius-sm); background:var(--green-50); }
+    .privacy-alert strong { display:block; margin-bottom:7px; color:var(--green-950); font-size:1.08rem; }
+    .privacy-alert p { margin:0; color:var(--ink-650); }
+    .processor-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:28px; }
+    .processor-card { padding:26px; border:1px solid var(--line); border-radius:var(--radius-md); background:var(--surface); }
+    .processor-card h3 { font-size:1.08rem; }
+    .processor-card p { margin:0; color:var(--ink-500); }
+    .rights-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:15px; margin-top:26px; }
+    .right-card { padding:22px 24px; border:1px solid var(--line); border-radius:var(--radius-sm); background:var(--surface); }
+    .right-card strong { display:block; color:var(--green-950); }
+    .right-card span { display:block; margin-top:5px; color:var(--ink-500); }
+    .contact-panel { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:36px; align-items:center; padding:34px; border-radius:var(--radius-md); color:var(--white); background:linear-gradient(145deg,var(--green-950),var(--green-700)); }
+    .contact-panel h2 { color:var(--white); }
+    .contact-panel p { margin:0; color:#d2e2d7; }
+    .contact-panel__actions { display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-end; }
+    .source-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:20px; }
+    .source-links a { font-weight:800; }
+    @media (max-width:1000px) { .privacy-nav,.policy-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media (max-width:800px) { .contact-panel { grid-template-columns:1fr; } .contact-panel__actions { justify-content:flex-start; } }
+    @media (max-width:650px) { .privacy-nav,.policy-grid,.processor-grid,.rights-grid { grid-template-columns:1fr; } .contact-panel { padding:26px 22px; } }
+  </style>
+
+  <!-- Google Tag Manager: plaats de officiële GTM-code hier, nadat toestemming technisch correct is ingericht. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://bomenrooier.nl/#website",
+        "url": "https://bomenrooier.nl/",
+        "name": "BomenRooier",
+        "inLanguage": "nl-NL",
+        "publisher": { "@id": "https://bomenrooier.nl/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://bomenrooier.nl/#organization",
+        "name": "BomenRooier",
+        "url": "https://bomenrooier.nl/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bomenrooier.nl/assets/icons/logo-bomenrooier.svg"
+        },
+        "telephone": "+31612249916",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+31612249916",
+          "contactType": "privacy requests and customer service",
+          "availableLanguage": ["nl"]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bomenrooier.nl/privacyverklaring/#webpage",
+        "url": "https://bomenrooier.nl/privacyverklaring/",
+        "name": "Privacyverklaring | BomenRooier",
+        "headline": "Privacyverklaring",
+        "description": "Uitleg over de verwerking van persoonsgegevens bij offerteaanvragen, foto-uploads, contactmomenten en websitegebruik.",
+        "datePublished": "2026-07-24",
+        "dateModified": "2026-07-24",
+        "isPartOf": { "@id": "https://bomenrooier.nl/#website" },
+        "breadcrumb": { "@id": "https://bomenrooier.nl/privacyverklaring/#breadcrumb" },
+        "inLanguage": "nl-NL"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://bomenrooier.nl/privacyverklaring/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bomenrooier.nl/" },
+          { "@type": "ListItem", "position": 2, "name": "Privacyverklaring", "item": "https://bomenrooier.nl/privacyverklaring/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript): plaats de officiële iframe-code direct na <body>, nadat toestemming technisch correct is ingericht. -->
+  <a class="skip-link" href="#main-content">Ga naar de inhoud</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-top">
+      <div class="container header-top__inner">
+        <p>Vrijblijvende offerte · Snel contact via WhatsApp of telefoon</p>
+        <div class="header-top__links">
+          <a id="header-phone-link" class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="header" data-service="privacyverklaring" aria-label="Bel BomenRooier op 06 12 24 99 16">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg>
+            06 12 24 99 16
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container nav-wrap">
+      <a class="brand" href="../" aria-label="BomenRooier homepage"><img src="../assets/icons/logo-bomenrooier.svg" width="210" height="52" alt="BomenRooier"></a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menu openen"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="Hoofdnavigatie">
+        <a href="../#bomen-rooien">Bomen rooien</a>
+        <a href="../boom-kappen/">Boom kappen</a>
+        <a href="../bomen-snoeien/">Bomen snoeien</a>
+        <a href="../boomstronk-verwijderen/">Boomstronk</a>
+        <a href="../#faq">Veelgestelde vragen</a>
+        <a id="nav-offer-link" class="button button--small button--primary" href="../#offerte" data-action="internal_link_click" data-location="header" data-service="privacyverklaring">Offerte aanvragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <nav aria-label="Broodkruimel"><p class="eyebrow"><a href="../" data-action="internal_link_click" data-location="hero">Home</a> · Privacyverklaring</p></nav>
+          <h1 id="hero-title">Privacyverklaring</h1>
+          <p class="hero__intro">BomenRooier verwerkt persoonsgegevens wanneer u een offerte aanvraagt, foto’s verstuurt, belt, WhatsApp gebruikt of de website bezoekt. In deze verklaring leest u welke gegevens worden verwerkt, waarom dat gebeurt, hoe lang gegevens worden bewaard, met welke dienstverleners gegevens kunnen worden gedeeld en welke privacyrechten u heeft.</p>
+          <div class="hero__actions">
+            <a id="hero-data" class="button button--primary" href="#gegevens" data-action="internal_link_click" data-location="hero" data-service="privacyverklaring">Welke gegevens verwerken we?</a>
+            <a id="hero-rights" class="button button--secondary" href="#rechten" data-action="internal_link_click" data-location="hero" data-service="privacyverklaring">Bekijk uw rechten</a>
+          </div>
+          <div class="privacy-meta" aria-label="Pagina-informatie"><span>Laatst bijgewerkt: 24 juli 2026</span><span>Van toepassing op bomenrooier.nl</span></div>
+        </div>
+        <div class="hero__visual">
+          <figure class="hero__image-wrap"><img src="../assets/images/verzorgde-tuin-na-boomwerk.webp" width="720" height="900" alt="Verzorgde tuin na uitgevoerde boomwerkzaamheden" fetchpriority="high" decoding="async"></figure>
+          <div class="privacy-hero-card"><strong>Uw gegevens worden doelgericht gebruikt</strong><p>Gegevens uit een aanvraag worden gebruikt om de situatie te beoordelen, contact op te nemen en de gevraagde werkzaamheden voor te bereiden.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="service-strip" aria-label="Belangrijkste privacyonderwerpen">
+      <div class="container service-strip__grid">
+        <a href="#gegevens" data-action="internal_link_click" data-location="hero" data-service="privacyverklaring"><span>Persoonsgegevens</span><small>Wat wordt verzameld?</small></a>
+        <a href="#doeleinden" data-action="internal_link_click" data-location="hero" data-service="privacyverklaring"><span>Doeleinden</span><small>Waarom verwerken we dit?</small></a>
+        <a href="#bewaren" data-action="internal_link_click" data-location="hero" data-service="privacyverklaring"><span>Bewaartermijnen</span><small>Niet langer dan nodig</small></a>
+        <a href="#rechten" data-action="internal_link_click" data-location="hero" data-service="privacyverklaring"><span>Uw rechten</span><small>Inzage, correctie en meer</small></a>
+      </div>
+    </div>
+
+    <section class="section" id="verantwoordelijke" aria-labelledby="verantwoordelijke-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Verwerkingsverantwoordelijke</p>
+        <h2 id="verantwoordelijke-title">Wie is verantwoordelijk voor uw gegevens?</h2>
+        <p class="lead">BomenRooier is verantwoordelijk voor de persoonsgegevens die via deze website en directe contactkanalen worden verwerkt. Voor vragen over deze privacyverklaring of een verzoek over uw persoonsgegevens kunt u bellen naar <a href="tel:+31612249916" data-action="phone_click" data-location="content" data-service="privacyverklaring">06 12 24 99 16</a> of contact opnemen via WhatsApp.</p>
+        <div class="privacy-alert"><strong>Geen onnodige gegevens meesturen</strong><p>Stuur alleen informatie en foto’s mee die nodig zijn om de boom, bereikbaarheid en gewenste werkzaamheden te beoordelen. Vermijd waar mogelijk herkenbare personen, kentekens, documenten en andere gegevens die niet relevant zijn voor de aanvraag.</p></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="gegevens" aria-labelledby="gegevens-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Gegevenscategorieën</p><h2 id="gegevens-title">Welke persoonsgegevens verwerken we?</h2><p>Welke gegevens worden verwerkt hangt af van de manier waarop u contact opneemt en welke informatie u zelf verstrekt.</p></div>
+        <div class="policy-grid">
+          <article class="policy-card"><h3>Offerte- en contactgegevens</h3><p>Naam, telefoonnummer, postcode, plaats, gekozen dienst, uw omschrijving en toestemming om contact op te nemen.</p></article>
+          <article class="policy-card"><h3>Informatie over de locatie</h3><p>Gegevens over de tuin, toegangsroute, afmetingen, obstakels, boomsoort indien bekend en de gewenste oplevering.</p></article>
+          <article class="policy-card"><h3>Foto’s en bestanden</h3><p>Beelden van de boom, stam, kroon, stronk, wortels, tuin, doorgang en omgeving die u voor de beoordeling toevoegt.</p></article>
+          <article class="policy-card"><h3>Telefoon en WhatsApp</h3><p>Uw telefoonnummer, berichtinhoud, gedeelde foto’s en informatie die tijdens het gesprek of de berichtenwisseling wordt verstrekt.</p></article>
+          <article class="policy-card"><h3>Technische gegevens</h3><p>IP-adres, browsertype, apparaat- en beveiligingsgegevens, tijdstippen, bezochte pagina en technische loggegevens.</p></article>
+          <article class="policy-card"><h3>Campagnegegevens</h3><p>Bijvoorbeeld UTM-parameters, gclid, gbraid, wbraid en msclkid wanneer deze via een advertentie of campagne aan de URL zijn toegevoegd.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="doeleinden" aria-labelledby="doeleinden-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Doel en grondslag</p><h2 id="doeleinden-title">Waarom verwerken we persoonsgegevens?</h2><p>Persoonsgegevens worden alleen verwerkt voor een duidelijk doel en op een passende wettelijke grondslag.</p></div>
+        <div class="privacy-table-wrap"><table class="privacy-table"><thead><tr><th>Doel</th><th>Voorbeelden</th><th>Grondslag</th></tr></thead><tbody>
+          <tr><td>Uw aanvraag behandelen</td><td>De boom, stronk, bereikbaarheid, gewenste dienst en mogelijke aanpak beoordelen.</td><td>Stappen nemen op uw verzoek voorafgaand aan een mogelijke overeenkomst.</td></tr>
+          <tr><td>Contact opnemen</td><td>Uw aanvraag bespreken, aanvullende informatie vragen en een offerte of planning toelichten.</td><td>Uw verzoek, uitvoering van een overeenkomst en waar van toepassing uw toestemming.</td></tr>
+          <tr><td>Werkzaamheden voorbereiden</td><td>Een geschikte werkwijze, materieel, bereikbaarheid, afvoer en uitvoerende partij bepalen.</td><td>Voorbereiding en uitvoering van een overeenkomst.</td></tr>
+          <tr><td>Website beveiligen</td><td>Misbruik, spam, ongeautoriseerde toegang en technische storingen voorkomen en onderzoeken.</td><td>Gerechtvaardigd belang bij een veilige en goed werkende website.</td></tr>
+          <tr><td>Administratie en verplichtingen</td><td>Overeenkomsten, betalingen, klachten, bewijs en wettelijk vereiste administratie bijhouden.</td><td>Uitvoering van een overeenkomst en wettelijke verplichtingen.</td></tr>
+          <tr><td>Meten en adverteren</td><td>Websitegebruik en conversies meten en campagnes verbeteren wanneer dergelijke tags zijn ingeschakeld.</td><td>Toestemming, voor zover die voor de gebruikte techniek wettelijk vereist is.</td></tr>
+        </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="formulier-fotos" aria-labelledby="formulier-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Offerteformulier en beelden</p>
+        <h2 id="formulier-title">Hoe gebruiken we formuliergegevens en foto’s?</h2>
+        <p>De informatie uit het formulier wordt gebruikt om de aanvraag te beoordelen en contact met u op te nemen. Foto’s helpen bij het inschatten van de omvang van de boom, de omgeving, mogelijke obstakels en de bereikbaarheid. Een beoordeling op basis van foto’s is niet in iedere situatie voldoende; aanvullende vragen of een beoordeling op locatie kunnen nodig zijn.</p>
+        <ul class="legal-list">
+          <li>Bestanden worden niet gebruikt voor openbare reclame zonder aparte toestemming.</li>
+          <li>Relevante aanvraaggegevens kunnen worden gedeeld met een geselecteerde uitvoerende partij wanneer dit nodig is voor beoordeling, prijsbepaling of uitvoering.</li>
+          <li>Bestanden mogen geen gegevens bevatten die niet nodig zijn voor de aanvraag.</li>
+          <li>De beveiligde serverless verwerking gebruikt geheime sleutels uitsluitend aan de serverzijde en niet in openbare browsercode.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="delen" aria-labelledby="delen-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Ontvangers en dienstverleners</p><h2 id="delen-title">Met wie kunnen gegevens worden gedeeld?</h2><p>BomenRooier verkoopt uw persoonsgegevens niet. Gegevens kunnen alleen worden gedeeld wanneer dit nodig is voor de website, de aanvraag, de uitvoering of een wettelijke verplichting.</p></div>
+        <div class="processor-grid">
+          <article class="processor-card"><h3>Cloudflare</h3><p>Voor domeinverkeer, beveiliging, hostingfuncties en de serverless verwerking van het offerteformulier.</p></article>
+          <article class="processor-card"><h3>Resend</h3><p>Voor het technisch afleveren van formuliermeldingen vanuit de beveiligde backend.</p></article>
+          <article class="processor-card"><h3>Uitvoerende partijen</h3><p>Alleen de gegevens die nodig zijn om de aanvraag te beoordelen, werkzaamheden te plannen of uit te voeren.</p></article>
+          <article class="processor-card"><h3>Meet- en advertentieplatforms</h3><p>Google en vergelijkbare platforms wanneer tags na de vereiste toestemming zijn geactiveerd.</p></article>
+          <article class="processor-card"><h3>WhatsApp en telefonie</h3><p>Wanneer u deze kanalen gebruikt, verwerken de betrokken communicatieaanbieders ook gegevens volgens hun eigen voorwaarden.</p></article>
+          <article class="processor-card"><h3>Overheid en adviseurs</h3><p>Wanneer dit wettelijk verplicht is of noodzakelijk is voor een geschil, fraudeonderzoek of juridische verplichting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="buiten-eer" aria-labelledby="buiten-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Internationale verwerking</p>
+        <h2 id="buiten-title">Kunnen gegevens buiten de EER worden verwerkt?</h2>
+        <p class="lead">Sommige technische dienstverleners zijn internationaal actief. Daardoor kunnen persoonsgegevens buiten de Europese Economische Ruimte worden verwerkt. Waar dat gebeurt, wordt gebruikgemaakt van een toepasselijk adequaatheidsbesluit, standaardcontractbepalingen of andere wettelijk toegestane waarborgen. Welke route geldt, hangt af van de dienst, instellingen en actuele contractuele afspraken.</p>
+      </div>
+    </section>
+
+    <section class="section" id="bewaren" aria-labelledby="bewaren-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Niet langer dan nodig</p><h2 id="bewaren-title">Hoe lang bewaren we persoonsgegevens?</h2><p>Gegevens worden verwijderd of geanonimiseerd wanneer ze niet meer nodig zijn, behalve wanneer een wettelijke bewaarplicht of een lopend geschil langer bewaren vereist.</p></div>
+        <div class="privacy-table-wrap"><table class="privacy-table"><thead><tr><th>Gegevens</th><th>Gebruikelijke maximale termijn</th><th>Waarom</th></tr></thead><tbody>
+          <tr><td>Niet-uitgevoerde offerteaanvraag</td><td>Tot 12 maanden na het laatste inhoudelijke contact.</td><td>Opvolging, vragen en het voorkomen van dubbele of onduidelijke aanvragen.</td></tr>
+          <tr><td>Foto’s bij een aanvraag</td><td>Tot 12 maanden na afronding of het laatste contact, tenzij langer nodig voor uitvoering of een geschil.</td><td>Beoordeling, planning, oplevering en onderbouwing van afspraken.</td></tr>
+          <tr><td>Uitgevoerde opdracht</td><td>Zolang nodig voor uitvoering, nazorg, klachten en toepasselijke verjarings- of bewijsbelangen.</td><td>Overeenkomst en mogelijke vragen achteraf.</td></tr>
+          <tr><td>Financiële administratie</td><td>In beginsel 7 jaar wanneer fiscale wetgeving dit vereist.</td><td>Wettelijke administratie- en bewaarplichten.</td></tr>
+          <tr><td>Technische beveiligingslogs</td><td>Zo kort mogelijk en afhankelijk van het beveiligingsdoel.</td><td>Misbruik, storingen en beveiligingsincidenten onderzoeken.</td></tr>
+          <tr><td>Meet- en campagnegegevens</td><td>Volgens de ingestelde bewaartermijn van het platform en de gegeven toestemming.</td><td>Meten van websitegebruik en campagneprestaties.</td></tr>
+        </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="cookies" aria-labelledby="cookies-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Cookies en vergelijkbare technieken</p>
+        <h2 id="cookies-title">Hoe gaan we om met cookies en tracking?</h2>
+        <p>De website kan strikt noodzakelijke technieken gebruiken voor beveiliging en een correcte werking. Wanneer analytische of advertentietags worden geactiveerd, worden deze alleen geladen nadat toestemming is verkregen voor zover toestemming wettelijk vereist is. U moet een keuze kunnen weigeren zonder dat niet-noodzakelijke tracking vooraf wordt geplaatst.</p>
+        <ul class="legal-list">
+          <li>Noodzakelijke technieken ondersteunen beveiliging, formulierwerking en technische prestaties.</li>
+          <li>Analytische technieken kunnen inzicht geven in paginaweergaven, gebruik en conversies.</li>
+          <li>Advertentietechnieken kunnen campagneparameters en conversies aan advertentieplatforms koppelen.</li>
+          <li>Een toestemming moet later kunnen worden ingetrokken of aangepast via de cookie-instellingen.</li>
+        </ul>
+        <div class="privacy-alert"><strong>Technische implementatie blijft noodzakelijk</strong><p>Deze privacyverklaring blokkeert zelf geen tags. GTM, GA4, Google Ads en andere niet-noodzakelijke scripts moeten technisch achter een geldige toestemmingskeuze worden geplaatst.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="beveiliging" aria-labelledby="beveiliging-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Beveiligingsmaatregelen</p>
+        <h2 id="beveiliging-title">Hoe beveiligen we persoonsgegevens?</h2>
+        <p>BomenRooier neemt passende technische en organisatorische maatregelen die passen bij de aard van de gegevens en de risico’s. Voorbeelden zijn versleutelde verbindingen, server-side opslag van geheime sleutels, toegangsbeperking, bestandsgrootte- en bestandstypecontroles, spambeperking, software-updates en afspraken met technische dienstverleners.</p>
+        <p>Geen enkele verwerking via internet is volledig zonder risico. Bij een beveiligingsincident wordt onderzocht welke maatregelen nodig zijn en of melding aan betrokkenen of de Autoriteit Persoonsgegevens wettelijk verplicht is.</p>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="rechten" aria-labelledby="rechten-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Privacyrechten</p><h2 id="rechten-title">Welke rechten heeft u?</h2><p>Afhankelijk van de situatie kunt u de volgende rechten uitoefenen. Een verzoek wordt beoordeeld binnen de regels van de AVG.</p></div>
+        <div class="rights-grid">
+          <div class="right-card"><strong>Inzage</strong><span>Vragen welke persoonsgegevens over u worden verwerkt en daarvan een kopie ontvangen.</span></div>
+          <div class="right-card"><strong>Correctie</strong><span>Onjuiste of onvolledige persoonsgegevens laten aanpassen.</span></div>
+          <div class="right-card"><strong>Verwijdering</strong><span>Gegevens laten wissen wanneer er geen geldige reden meer is om ze te bewaren.</span></div>
+          <div class="right-card"><strong>Beperking</strong><span>In bepaalde situaties vragen om verwerking tijdelijk te beperken.</span></div>
+          <div class="right-card"><strong>Bezwaar</strong><span>Bezwaar maken tegen verwerking op basis van een gerechtvaardigd belang.</span></div>
+          <div class="right-card"><strong>Overdraagbaarheid</strong><span>Gegevens die u zelf heeft verstrekt in een bruikbaar formaat ontvangen wanneer dit recht van toepassing is.</span></div>
+          <div class="right-card"><strong>Toestemming intrekken</strong><span>Een eerder gegeven toestemming intrekken zonder dat dit eerdere rechtmatige verwerking ongeldig maakt.</span></div>
+          <div class="right-card"><strong>Geen uitsluitend geautomatiseerd besluit</strong><span>BomenRooier neemt geen besluiten met juridische of vergelijkbaar ingrijpende gevolgen uitsluitend door een geautomatiseerd systeem.</span></div>
+        </div>
+        <div class="privacy-alert"><strong>Identiteit controleren</strong><p>Om te voorkomen dat gegevens aan de verkeerde persoon worden verstrekt, kan aanvullende informatie worden gevraagd om uw identiteit en de betreffende aanvraag te controleren. Verstrek daarbij niet meer informatie dan noodzakelijk.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="klacht" aria-labelledby="klacht-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Vraag of klacht</p>
+        <h2 id="klacht-title">Hoe dient u een privacyverzoek of klacht in?</h2>
+        <p>Neem bij voorkeur eerst contact op met BomenRooier, zodat het verzoek of probleem kan worden onderzocht. U kunt bellen naar <a href="tel:+31612249916" data-action="phone_click" data-location="content" data-service="privacyverklaring">06 12 24 99 16</a> of via WhatsApp aangeven dat uw bericht over privacy gaat.</p>
+        <p>U heeft daarnaast het recht om een klacht in te dienen bij de Autoriteit Persoonsgegevens. Op de website van de toezichthouder vindt u informatie over privacyrechten, voorbeeldbrieven en klachtenprocedures.</p>
+        <div class="source-links">
+          <a class="button button--secondary button--small" href="https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/privacyrechten-avg/recht-op-informatie" target="_blank" rel="noopener">Uitleg over het recht op informatie</a>
+          <a class="button button--secondary button--small" href="https://www.autoriteitpersoonsgegevens.nl/zelf-doen-praktische-documenten" target="_blank" rel="noopener">Voorbeeldbrieven en privacyrechten</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="wijzigingen" aria-labelledby="wijzigingen-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Actualiteit</p>
+        <h2 id="wijzigingen-title">Wijzigingen in deze privacyverklaring</h2>
+        <p>Deze verklaring kan worden aangepast wanneer de website, formulieren, dienstverleners of wettelijke verplichtingen veranderen. De nieuwste versie staat altijd op deze pagina. Bij een belangrijke wijziging wordt de datum bovenaan aangepast en kan aanvullende informatie op de website worden geplaatst.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="privacy-contact-title">
+      <div class="container">
+        <div class="contact-panel">
+          <div><p class="eyebrow">Contact over persoonsgegevens</p><h2 id="privacy-contact-title">Heeft u een vraag of wilt u een recht uitoefenen?</h2><p>Vermeld dat uw vraag over privacy gaat en geef voldoende informatie om de juiste aanvraag of contactgeschiedenis terug te vinden.</p></div>
+          <div class="contact-panel__actions"><a class="button button--light tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="footer" data-service="privacyverklaring">Bel 06 12 24 99 16</a><a class="button button--outline-light tracked-contact" href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20heb%20een%20vraag%20over%20de%20verwerking%20van%20mijn%20persoonsgegevens." data-action="whatsapp_click" data-location="footer" data-service="privacyverklaring" target="_blank" rel="noopener">Stuur een WhatsApp-bericht</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="../" aria-label="BomenRooier homepage"><img src="../assets/icons/logo-bomenrooier-light.svg" width="220" height="54" alt="BomenRooier"></a><p>Een duidelijk aanspreekpunt voor het beoordelen en inplannen van boomwerkzaamheden.</p></div>
+      <div><h2>Diensten</h2><ul><li><a href="../#bomen-rooien">Bomen rooien</a></li><li><a href="../boom-kappen/">Boom kappen</a></li><li><a href="../bomen-snoeien/">Bomen snoeien</a></li><li><a href="../boomstronk-verwijderen/">Boomstronk verwijderen</a></li></ul></div>
+      <div><h2>Privacy</h2><ul><li><a href="#gegevens">Persoonsgegevens</a></li><li><a href="#delen">Dienstverleners</a></li><li><a href="#cookies">Cookies en tracking</a></li><li><a href="#rechten">Uw rechten</a></li><li><a href="#klacht">Vraag of klacht</a></li></ul></div>
+      <div><h2>Direct contact</h2><ul class="footer-contact"><li><a class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="footer" data-service="privacyverklaring">06 12 24 99 16</a></li><li><a class="tracked-contact" href="https://wa.me/31612249916" data-action="whatsapp_click" data-location="footer" data-service="privacyverklaring" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="current-year"></span> BomenRooier. Alle rechten voorbehouden.</p><a href="#main-content">Terug naar boven</a></div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Snel contact opnemen"><a id="mobile-phone" class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="mobile_sticky" data-service="privacyverklaring">Bellen</a><a id="mobile-whatsapp" class="tracked-contact" href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20heb%20een%20vraag%20over%20privacy." data-action="whatsapp_click" data-location="mobile_sticky" data-service="privacyverklaring" target="_blank" rel="noopener">WhatsApp</a></div>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
