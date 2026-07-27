@@ -1167,32 +1167,20 @@
       <div class="container header-top__inner">
         <p>Vrijblijvende offerte · Snel contact via WhatsApp of telefoon</p>
         <div class="header-top__links">
-          <a
-            id="header-phone-link"
-            class="tracked-contact"
-            href="tel:+31612249916"
-            data-action="phone_click"
-            data-location="header"
-            data-service="boom-kappen-kosten"
-            aria-label="Bel BomenRooier op 06 12 24 99 16"
-          >06 12 24 99 16</a>
+          <a id="header-phone-link" class="tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="header" data-service="boom-kappen-kosten" aria-label="Bel BomenRooier op 06 12 24 99 16">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg>
+            06 12 24 99 16
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="container header-main">
+    <div class="container nav-wrap">
       <a class="brand" href="../" aria-label="BomenRooier homepage">
-        <img src="../assets/icons/logo-bomenrooier.svg" width="220" height="54" alt="BomenRooier">
+        <img src="../assets/icons/logo-bomenrooier.svg" width="210" height="52" alt="BomenRooier">
       </a>
 
-      <button
-        class="nav-toggle"
-        id="nav-toggle"
-        type="button"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-        aria-label="Menu openen"
-      >
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menu openen">
         <span></span><span></span><span></span>
       </button>
 
@@ -1200,9 +1188,9 @@
         <a href="../#bomen-rooien" data-action="internal_link_click" data-location="header" data-service="bomen-rooien">Bomen rooien</a>
         <a href="../boom-kappen/" data-action="internal_link_click" data-location="header" data-service="boom-kappen">Boom kappen</a>
         <a href="../bomen-snoeien/" data-action="internal_link_click" data-location="header" data-service="bomen-snoeien">Bomen snoeien</a>
-        <a href="../boomstronk-verwijderen/" data-action="internal_link_click" data-location="header" data-service="boomstronk-verwijderen">Boomstronk</a>
+        <a href="../boom-kappen-kosten/" aria-current="page" data-action="internal_link_click" data-location="header" data-service="boom-kappen-kosten">Kosten</a>
         <a href="#faq" data-action="internal_link_click" data-location="header" data-service="boom-kappen-kosten">Veelgestelde vragen</a>
-        <a class="button button--small button--primary" href="#offerte" data-action="internal_link_click" data-location="header" data-service="boom-kappen-kosten">Offerte aanvragen</a>
+        <a id="nav-offer-link" class="button button--small button--primary" href="#offerte" data-action="internal_link_click" data-location="header" data-service="boom-kappen-kosten">Offerte aanvragen</a>
       </nav>
     </div>
   </header>
@@ -1510,7 +1498,7 @@
         <div class="bk-extra-list">
           <article class="bk-extra-row">
             <h3>Boomstronk verwijderen</h3>
-            <p>Wilt u de plek opnieuw gebruiken voor gras, beplanting of bestrating, dan kan de stronk worden gefreesd of op een andere manier worden verwijderd. Lees meer over <a href="../boomstronk-verwijderen/" data-action="internal_link_click" data-location="extras" data-service="boomstronk-verwijderen">boomstronk verwijderen</a>.</p>
+            <p>Wilt u de plek opnieuw gebruiken voor gras, beplanting of bestrating, dan kan de stronk worden gefreesd of op een andere manier worden verwijderd. Laat in de offerte duidelijk opnemen of dit onderdeel wel of niet is inbegrepen.</p>
             <span>Vaak aparte post</span>
           </article>
 
@@ -1653,7 +1641,7 @@
           <details class="bk-faq-item">
             <summary>Is het verwijderen van de boomstronk inbegrepen?</summary>
             <div class="bk-faq-answer">
-              <p>Niet automatisch. Bij boom kappen blijft de stronk meestal in de grond staan. Wilt u de plek vrijmaken voor gras, beplanting of bestrating, laat dan in de offerte opnemen of de boomstronk wordt gefreesd of op een andere manier verwijderd. Bekijk hiervoor ook de pagina over <a href="../boomstronk-verwijderen/" data-action="internal_link_click" data-location="faq" data-service="boomstronk-verwijderen">boomstronk verwijderen</a>.</p>
+              <p>Niet automatisch. Bij boom kappen blijft de stronk meestal in de grond staan. Wilt u de plek vrijmaken voor gras, beplanting of bestrating, laat dan in de offerte opnemen of de boomstronk wordt gefreesd of op een andere manier verwijderd.</p>
             </div>
           </details>
 
@@ -1893,7 +1881,6 @@
           <li><a href="../#bomen-rooien">Bomen rooien</a></li>
           <li><a href="../boom-kappen/">Boom kappen</a></li>
           <li><a href="../bomen-snoeien/">Bomen snoeien</a></li>
-          <li><a href="../boomstronk-verwijderen/">Boomstronk verwijderen</a></li>
         </ul>
       </div>
 
