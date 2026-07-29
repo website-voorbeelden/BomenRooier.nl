@@ -27,6 +27,413 @@
   <link rel="preload" href="./assets/images/bomenrooier-boom-rooien.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="./assets/css/styles.css">
 
+
+  <style>
+    /* Nieuwe homepagehero – bewust met unieke klassennamen zodat de bestaande styling intact blijft. */
+    .trust-hero {
+      --hero-green: #2f8f32;
+      --hero-green-dark: #1f6c2a;
+      --hero-text: #111713;
+      --hero-muted: #59615b;
+      --hero-border: #dfe6df;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .trust-hero__top {
+      display: grid;
+      grid-template-columns: minmax(0, 1.14fr) minmax(380px, .86fr);
+      gap: clamp(48px, 7vw, 112px);
+      align-items: start;
+      padding-top: clamp(56px, 7vw, 104px);
+      padding-bottom: clamp(24px, 3vw, 44px);
+    }
+
+    .trust-hero__copy {
+      padding-top: clamp(16px, 2.2vw, 34px);
+      max-width: 760px;
+    }
+
+    .trust-hero__eyebrow {
+      margin: 0 0 20px;
+      color: var(--hero-green-dark);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .trust-hero__title {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 0;
+      color: var(--hero-text);
+      font-size: clamp(3.25rem, 5.55vw, 6rem);
+      font-weight: 850;
+      letter-spacing: -.065em;
+      line-height: .94;
+      text-transform: uppercase;
+    }
+
+    .trust-hero__title span,
+    .trust-hero__title strong {
+      display: block;
+      font: inherit;
+    }
+
+    .trust-hero__title strong {
+      color: var(--hero-green);
+    }
+
+    .trust-hero__intro {
+      max-width: 700px;
+      margin: clamp(24px, 3vw, 38px) 0 0;
+      color: var(--hero-muted);
+      font-size: clamp(1.02rem, 1.25vw, 1.18rem);
+      line-height: 1.75;
+    }
+
+    .trust-hero__links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px 24px;
+      margin-top: 28px;
+    }
+
+    .trust-hero__phone {
+      color: var(--hero-text);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .trust-hero__phone:hover {
+      color: var(--hero-green-dark);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .trust-hero__conversion {
+      position: relative;
+      z-index: 3;
+    }
+
+    .trust-hero__rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 38px;
+      margin: 0 0 20px;
+      color: #1d211e;
+      font-size: .98rem;
+      white-space: nowrap;
+    }
+
+    .trust-hero__google {
+      display: inline-grid;
+      place-items: center;
+      width: 27px;
+      height: 27px;
+      font-size: 1.45rem;
+      font-weight: 900;
+      line-height: 1;
+      background: conic-gradient(from -45deg, #4285f4 0 25%, #34a853 0 50%, #fbbc05 0 75%, #ea4335 0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .trust-hero__stars {
+      color: #f2aa00;
+      font-size: 1.28rem;
+      letter-spacing: .08em;
+      transform: translateY(-1px);
+    }
+
+    .trust-hero__form {
+      padding: clamp(26px, 3vw, 38px);
+      border: 1px solid var(--hero-border);
+      border-top: 5px solid var(--hero-green);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .98);
+      box-shadow: 0 28px 70px rgba(18, 77, 50, .14);
+    }
+
+    .trust-hero__form-heading {
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    .trust-hero__form-heading h2 {
+      margin: 0;
+      color: var(--hero-text);
+      font-size: clamp(1.38rem, 2vw, 1.75rem);
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
+    .trust-hero__form-heading p {
+      max-width: 440px;
+      margin: 10px auto 0;
+      color: var(--hero-muted);
+      font-size: .86rem;
+      line-height: 1.5;
+    }
+
+    .trust-hero__form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .trust-hero__field {
+      margin-bottom: 12px;
+    }
+
+    .trust-hero__field label {
+      display: block;
+      margin: 0 0 6px;
+      color: #394139;
+      font-size: .76rem;
+      font-weight: 750;
+    }
+
+    .trust-hero__field input,
+    .trust-hero__field select {
+      width: 100%;
+      min-height: 52px;
+      padding: 0 15px;
+      border: 1px solid #d9dfda;
+      border-radius: 9px;
+      background: #fff;
+      color: #172018;
+      font: inherit;
+      box-shadow: 0 1px 3px rgba(13, 40, 24, .04);
+      transition: border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .trust-hero__field input:focus,
+    .trust-hero__field select:focus {
+      outline: none;
+      border-color: var(--hero-green);
+      box-shadow: 0 0 0 4px rgba(47, 143, 50, .12);
+    }
+
+    .trust-hero__submit {
+      width: 100%;
+      min-height: 54px;
+      margin-top: 4px;
+      border: 0;
+      border-radius: 9px;
+      background: var(--hero-green);
+      color: #fff;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 12px 24px rgba(47, 143, 50, .2);
+      transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease;
+    }
+
+    .trust-hero__submit:hover {
+      background: var(--hero-green-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 15px 30px rgba(31, 108, 42, .24);
+    }
+
+    .trust-hero__submit:focus-visible {
+      outline: 3px solid rgba(47, 143, 50, .28);
+      outline-offset: 3px;
+    }
+
+    .trust-hero__form-note {
+      margin: 12px 0 0;
+      color: #687069;
+      font-size: .76rem;
+      text-align: center;
+    }
+
+    .trust-hero__media {
+      position: relative;
+      width: min(100% - 32px, 1540px);
+      height: clamp(330px, 35vw, 570px);
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 22px 22px 0 0;
+      background: #dfe8df;
+    }
+
+    .trust-hero__media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 43%;
+      transform: scale(1.002);
+    }
+
+    .trust-hero__media-shade {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(8, 31, 18, .34), transparent 48%),
+        linear-gradient(0deg, rgba(8, 31, 18, .22), transparent 50%);
+      pointer-events: none;
+    }
+
+    .trust-hero__media-caption {
+      position: absolute;
+      inset: auto 0 28px;
+      z-index: 2;
+    }
+
+    .trust-hero__media-caption p {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 3px;
+      max-width: 360px;
+      margin: 0;
+      padding: 14px 18px;
+      border: 1px solid rgba(255, 255, 255, .35);
+      border-radius: 12px;
+      background: rgba(13, 52, 29, .82);
+      color: #fff;
+      backdrop-filter: blur(10px);
+    }
+
+    .trust-hero__media-caption strong {
+      font-size: 1rem;
+    }
+
+    .trust-hero__media-caption span {
+      color: rgba(255, 255, 255, .82);
+      font-size: .82rem;
+    }
+
+    @media (max-width: 1040px) {
+      .trust-hero__top {
+        grid-template-columns: minmax(0, 1fr) minmax(350px, .85fr);
+        gap: 42px;
+      }
+
+      .trust-hero__title {
+        font-size: clamp(3rem, 6.1vw, 4.8rem);
+      }
+    }
+
+    @media (max-width: 820px) {
+      .trust-hero__top {
+        grid-template-columns: 1fr;
+        gap: 42px;
+        padding-top: 46px;
+      }
+
+      .trust-hero__copy {
+        max-width: none;
+        padding-top: 0;
+      }
+
+      .trust-hero__title {
+        font-size: clamp(3rem, 12vw, 5rem);
+      }
+
+      .trust-hero__intro {
+        max-width: 640px;
+      }
+
+      .trust-hero__conversion {
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .trust-hero__media {
+        width: calc(100% - 24px);
+        height: clamp(300px, 62vw, 480px);
+        border-radius: 18px 18px 0 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .trust-hero__top {
+        padding-top: 34px;
+        padding-bottom: 20px;
+      }
+
+      .trust-hero__eyebrow {
+        margin-bottom: 14px;
+        font-size: .7rem;
+      }
+
+      .trust-hero__title {
+        font-size: clamp(2.55rem, 13.2vw, 4rem);
+        letter-spacing: -.055em;
+      }
+
+      .trust-hero__intro {
+        margin-top: 22px;
+        font-size: .98rem;
+        line-height: 1.65;
+      }
+
+      .trust-hero__links {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .trust-hero__links .button {
+        width: 100%;
+      }
+
+      .trust-hero__phone {
+        text-align: center;
+      }
+
+      .trust-hero__rating {
+        flex-wrap: wrap;
+        gap: 6px 9px;
+        margin-bottom: 14px;
+        font-size: .9rem;
+      }
+
+      .trust-hero__form {
+        padding: 23px 18px;
+        border-radius: 15px;
+      }
+
+      .trust-hero__form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .trust-hero__media {
+        width: 100%;
+        height: 330px;
+        border-radius: 0;
+      }
+
+      .trust-hero__media img {
+        object-position: 58% center;
+      }
+
+      .trust-hero__media-caption {
+        bottom: 18px;
+      }
+
+      .trust-hero__media-caption p {
+        max-width: calc(100vw - 40px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .trust-hero__submit {
+        transition: none;
+      }
+    }
+  </style>
+
+
   <!-- Google Tag Manager: plaats de officiële GTM <script>-code hier. -->
 
   <script type="application/ld+json">
@@ -242,40 +649,111 @@
   </header>
 
   <main id="main-content">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="eyebrow">Boom laten rooien of verwijderen</p>
-          <h1 id="hero-title">Uw bomenrooier voor het rooien van bomen</h1>
-          <p class="hero__intro">Wilt u een boom volledig laten verwijderen? BomenRooier beoordeelt wat er nodig is en maakt een duidelijke offerte voor het kappen, rooien en eventueel verwijderen van de boomstronk.</p>
 
-          <ul class="check-list check-list--hero" aria-label="Voordelen">
-            <li>Vrijblijvende offerte op basis van uw situatie</li>
-            <li>Snel contact via telefoon of WhatsApp</li>
-            <li>Duidelijke prijs voordat de werkzaamheden starten</li>
-          </ul>
-
-          <div class="hero__actions">
-            <a id="hero-whatsapp" class="button button--whatsapp tracked-contact" href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20wil%20graag%20een%20vrijblijvende%20offerte%20aanvragen.%20Ik%20stuur%20zo%20enkele%20foto%27s." data-action="whatsapp_click" data-location="hero" target="_blank" rel="noopener">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1C18.7 23.7 24 18.4 24 11.9c0-3.2-1.2-6.2-3.5-8.4Zm-8.3 18.2h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.5 4.7Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5H8c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.5 3.8 6 5.3.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg>
+    <section class="trust-hero" aria-labelledby="hero-title">
+      <div class="container trust-hero__top">
+        <div class="trust-hero__copy">
+          <p class="trust-hero__eyebrow">Boom laten rooien, kappen of verwijderen</p>
+          <h1 id="hero-title" class="trust-hero__title">
+            <span>Bomenrooier</span>
+            <span>die jij kan</span>
+            <strong>vertrouwen.</strong>
+          </h1>
+          <p class="trust-hero__intro">
+            Bomen rooien, kappen en snoeien zonder onduidelijkheid. We beoordelen de situatie,
+            maken duidelijke afspraken en zorgen dat het werk veilig en netjes wordt uitgevoerd.
+          </p>
+          <div class="trust-hero__links">
+            <a class="button button--whatsapp tracked-contact"
+               href="https://wa.me/31612249916?text=Hallo%20BomenRooier%2C%20ik%20wil%20graag%20een%20vrijblijvende%20offerte%20aanvragen.%20Ik%20stuur%20zo%20enkele%20foto%27s."
+               data-action="whatsapp_click"
+               data-location="hero"
+               target="_blank"
+               rel="noopener">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1C18.7 23.7 24 18.4 24 11.9c0-3.2-1.2-6.2-3.5-8.4Zm-8.3 18.2h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.5 4.7Z"/></svg>
               Stuur foto’s via WhatsApp
             </a>
-            <a id="hero-phone" class="button button--secondary tracked-contact" href="tel:+31612249916" data-action="phone_click" data-location="hero">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg>
-              Bel direct
+            <a class="trust-hero__phone tracked-contact"
+               href="tel:+31612249916"
+               data-action="phone_click"
+               data-location="hero">
+              Of bel 06 12 24 99 16
             </a>
           </div>
-          <p class="hero__microcopy">Geen verplichtingen. U ontvangt eerst een inschatting of offerte op maat.</p>
         </div>
 
-        <div class="hero__visual">
-          <figure class="hero__image-wrap">
-            <img src="./assets/images/bomenrooier-boom-rooien.webp" width="1600" height="1067" alt="Bomenrooier die gezekerd een boom met een kettingzaag verwijdert" fetchpriority="high" decoding="async">
-          </figure>
-          <div class="hero-card" aria-label="Offerte in drie stappen">
-            <span class="hero-card__number">1</span>
-            <div><strong>Stuur foto’s en uw postcode</strong><span>Dan kunnen we de klus gericht beoordelen.</span></div>
+        <div class="trust-hero__conversion">
+          <div class="trust-hero__rating" aria-label="BomenRooier heeft vijf sterren op Google">
+            <span class="trust-hero__google" aria-hidden="true">G</span>
+            <strong>5 sterren op Google</strong>
+            <span class="trust-hero__stars" aria-hidden="true">★★★★★</span>
           </div>
+
+          <form class="trust-hero__form" id="hero-quick-form">
+            <div class="trust-hero__form-heading">
+              <h2>Vraag gratis een offerte aan</h2>
+              <p>Vul uw gegevens in. Daarna kunt u de aanvraag aanvullen met een omschrijving en foto’s.</p>
+            </div>
+
+            <div class="trust-hero__field trust-hero__field--full">
+              <label for="hero-service">Gewenste dienst</label>
+              <select id="hero-service" name="hero_service" required>
+                <option value="">Kies een dienst</option>
+                <option value="Bomen rooien">Bomen rooien</option>
+                <option value="Boom kappen">Boom kappen</option>
+                <option value="Boom verwijderen">Boom verwijderen</option>
+                <option value="Bomen snoeien">Bomen snoeien</option>
+                <option value="Boomstronk verwijderen">Boomstronk verwijderen</option>
+                <option value="Boomwortels verwijderen">Boomwortels verwijderen</option>
+                <option value="Stormschade of gevaarlijke boom">Stormschade of gevaarlijke boom</option>
+                <option value="Advies kapvergunning">Advies over kapvergunning</option>
+                <option value="Anders">Anders</option>
+              </select>
+            </div>
+
+            <div class="trust-hero__form-row">
+              <div class="trust-hero__field">
+                <label for="hero-postal-code">Postcode</label>
+                <input id="hero-postal-code" name="hero_postal_code" type="text" autocomplete="postal-code" required maxlength="12">
+              </div>
+              <div class="trust-hero__field">
+                <label for="hero-city">Plaats</label>
+                <input id="hero-city" name="hero_city" type="text" autocomplete="address-level2" required maxlength="100">
+              </div>
+            </div>
+
+            <div class="trust-hero__field trust-hero__field--full">
+              <label for="hero-name">Naam</label>
+              <input id="hero-name" name="hero_name" type="text" autocomplete="name" required maxlength="100">
+            </div>
+
+            <div class="trust-hero__field trust-hero__field--full">
+              <label for="hero-email">E-mailadres</label>
+              <input id="hero-email" name="hero_email" type="email" autocomplete="email" required maxlength="160">
+            </div>
+
+            <div class="trust-hero__field trust-hero__field--full">
+              <label for="hero-phone-number">Telefoonnummer</label>
+              <input id="hero-phone-number" name="hero_phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="30">
+            </div>
+
+            <button class="trust-hero__submit" type="submit">Offerte aanvragen</button>
+            <p class="trust-hero__form-note">Vrijblijvend · eerst een duidelijke prijs</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="trust-hero__media">
+        <img
+          src="./assets/images/bomenrooier-boom-rooien.webp"
+          width="1600"
+          height="1067"
+          alt="Bomenrooier die veilig aan een boom werkt"
+          fetchpriority="high"
+          decoding="async">
+        <div class="trust-hero__media-shade" aria-hidden="true"></div>
+        <div class="container trust-hero__media-caption">
+          <p><strong>Vakkundig boomwerk</strong><span>Van beoordeling tot nette oplevering</span></p>
         </div>
       </div>
     </section>
@@ -699,5 +1177,48 @@
   </div>
 
   <script src="./assets/js/main.js" defer></script>
+
+  <script>
+    (function () {
+      const quickForm = document.getElementById('hero-quick-form');
+      const fullForm = document.getElementById('quote-form');
+
+      if (!quickForm || !fullForm) return;
+
+      const mappings = [
+        ['hero-service', 'service'],
+        ['hero-postal-code', 'postal-code'],
+        ['hero-city', 'city'],
+        ['hero-name', 'name'],
+        ['hero-email', 'email'],
+        ['hero-phone-number', 'phone']
+      ];
+
+      quickForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!quickForm.reportValidity()) return;
+
+        mappings.forEach(function (pair) {
+          const sourceField = document.getElementById(pair[0]);
+          const targetField = document.getElementById(pair[1]);
+
+          if (sourceField && targetField) {
+            targetField.value = sourceField.value;
+            targetField.dispatchEvent(new Event('input', { bubbles: true }));
+            targetField.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+        });
+
+        fullForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        window.setTimeout(function () {
+          const messageField = document.getElementById('message');
+          if (messageField) messageField.focus({ preventScroll: true });
+        }, 650);
+      });
+    }());
+  </script>
+
 </body>
 </html>
