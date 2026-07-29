@@ -1,0 +1,12 @@
+UPLOADINSTRUCTIE
+
+Upload de mappen 'privacy' en 'voorwaarden' naast de hoofd-index.html van BomenRooier.nl.
+
+Daarna werken deze URL's:
+- https://bomenrooier.nl/privacy/
+- https://bomenrooier.nl/voorwaarden/
+
+Beide URL's sturen bezoekers door naar:
+- https://bomenrooier.nl/privacyverklaring/
+
+De bestaande map 'privacyverklaring' moet blijven staan.
