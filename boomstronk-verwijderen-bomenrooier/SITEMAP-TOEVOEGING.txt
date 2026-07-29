@@ -1,4 +1,0 @@
-<url>
-  <loc>https://bomenrooier.nl/boomstronk-verwijderen/</loc>
-  <lastmod>2026-07-29</lastmod>
-</url>

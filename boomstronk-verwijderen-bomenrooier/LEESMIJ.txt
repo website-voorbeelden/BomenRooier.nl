@@ -1,5 +1,0 @@
-Upload de map 'boomstronk-verwijderen' naast de bestaande mappen in de hoofdmap van de repository.
-
-De pagina gebruikt de bestaande assets en het bestaande formulierendpoint. Er staat geen contactformulier in de hero.
-
-URL na upload: https://bomenrooier.nl/boomstronk-verwijderen/
